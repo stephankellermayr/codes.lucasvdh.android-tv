@@ -1,0 +1,127 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "codes.lucasvdh.android-tv",
+  "version": "0.0.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#3DDC84",
+  "name": {
+    "en": "Android TV"
+  },
+  "description": {
+    "en": "Leverage your renewable energy production in a smarter way",
+    "nl": "Gebruik je groen opgewekte stroom op een slimme manier"
+  },
+  "category": "tv",
+  "platforms": [
+    "local"
+  ],
+  "tags": {
+    "en": [
+      "android",
+      "tv",
+      "remote"
+    ],
+    "nl": [
+      "android",
+      "tv",
+      "afstandsbediening"
+    ]
+  },
+  "images": {
+    "xlarge": "./assets/images/xlarge.png",
+    "large": "./assets/images/large.png",
+    "small": "./assets/images/small.png"
+  },
+  "author": {
+    "name": "Lucas van der Have",
+    "email": "lucasvdhave@gmail.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Lucas van der Have",
+        "email": "lucasvdhave@gmail.com"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "lucasvdh"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/DiedB/Homey-SolarPanels/issues"
+  },
+  "source": "https://github.com/DiedB/Homey-SolarPanels",
+  "homepage": "https://diederik.gitbook.io/homey-solar-panels-app/",
+  "support": "https://diederik.gitbook.io/homey-solar-panels-app/faq",
+  "homeyCommunityTopicId": 44273,
+  "drivers": [
+    {
+      "name": {
+        "en": "Remote"
+      },
+      "pair": [
+        {
+          "id": "pair"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "large": "/drivers/remote/assets/images/large.jpg",
+        "small": "/drivers/remote/assets/images/small.jpg"
+      },
+      "platforms": [
+        "local"
+      ],
+      "class": "tv",
+      "capabilities": [],
+      "id": "remote",
+      "settings": [
+        {
+          "id": "ip",
+          "type": "text",
+          "label": {
+            "en": "IP address"
+          }
+        }
+      ]
+    }
+  ],
+  "discovery": {
+    "android-tv": {
+      "type": "ssdp",
+      "ssdp": {
+        "search": "*"
+      },
+      "id": "{{headers.usn}}",
+      "conditions": [
+        []
+      ]
+    },
+    "mdns": {
+      "type": "mdns-sd",
+      "mdns-sd": {
+        "name": "android",
+        "protocol": "tcp"
+      },
+      "id": "{{txt.id}}",
+      "conditions": [
+        []
+      ]
+    }
+  }
+}

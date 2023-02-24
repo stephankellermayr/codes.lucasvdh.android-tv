@@ -1,0 +1,12 @@
+{
+  "type": "mdns-sd",
+  "mdns-sd": {
+    "name": "android",
+    "protocol": "tcp"
+  },
+  "id": "{{txt.id}}",
+  "conditions": [
+    [
+    ]
+  ]
+}

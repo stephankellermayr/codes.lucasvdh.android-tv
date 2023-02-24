@@ -1,0 +1,11 @@
+{
+  "type": "ssdp",
+  "ssdp": {
+    "search": "*"
+  },
+  "id": "{{headers.usn}}",
+  "conditions": [
+    [
+    ]
+  ]
+}
