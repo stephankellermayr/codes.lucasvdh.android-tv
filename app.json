@@ -9,8 +9,16 @@
     "en": "Android TV"
   },
   "description": {
-    "en": "Leverage your renewable energy production in a smarter way",
-    "nl": "Gebruik je groen opgewekte stroom op een slimme manier"
+    "en": "Turn your living room into a smart cinema with Homey and Android TV!",
+    "nl": "Maak van je woonkamer een smart cinema met Homey en Android TV!",
+    "de": "Verwandeln Sie Ihr Wohnzimmer mit Homey und Android TV in ein Smart Cinema!",
+    "fr": "Transformez votre salon en une salle de cinéma intelligente avec Homey et Android TV !",
+    "it": "Trasforma il tuo soggiorno in una smart cinema con Homey e Android TV!",
+    "sv": "Gör ditt vardagsrum till en smart biograf med Homey och Android TV!",
+    "no": "Gjør stuen din om til et smart kino med Homey og Android TV!",
+    "es": "Convierta su sala de estar en un cine inteligente con Homey y Android TV!",
+    "da": "Gør dit stue til et smart cinema med Homey og Android TV!",
+    "pl": "Przekształć swój salon w inteligentne kino za pomocą Homey i Android TV!"
   },
   "category": "video",
   "platforms": [
@@ -18,14 +26,54 @@
   ],
   "tags": {
     "en": [
-      "android",
-      "tv",
+      "Android",
+      "TV",
       "remote"
     ],
     "nl": [
-      "android",
-      "tv",
+      "Android",
+      "TV",
       "afstandsbediening"
+    ],
+    "de": [
+      "Android",
+      "TV",
+      "Fernbedienung"
+    ],
+    "fr": [
+      "Android",
+      "TV",
+      "télécommande"
+    ],
+    "it": [
+      "Android",
+      "TV",
+      "telecomando"
+    ],
+    "sv": [
+      "Android",
+      "TV",
+      "fjärrkontroll"
+    ],
+    "no": [
+      "Android",
+      "TV",
+      "fjernkontroll"
+    ],
+    "es": [
+      "Android",
+      "TV",
+      "control remoto"
+    ],
+    "da": [
+      "Android",
+      "TV",
+      "fjernbetjening"
+    ],
+    "pl": [
+      "Android",
+      "TV",
+      "pilot"
     ]
   },
   "images": {
@@ -53,11 +101,11 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/DiedB/Homey-SolarPanels/issues"
+    "url": "https://github.com/lucasvdh/codes.lucasvdh.android-tv/issues"
   },
-  "source": "https://github.com/DiedB/Homey-SolarPanels",
-  "homepage": "https://diederik.gitbook.io/homey-solar-panels-app/",
-  "support": "https://diederik.gitbook.io/homey-solar-panels-app/faq",
+  "source": "https://github.com/lucasvdh/codes.lucasvdh.android-tv",
+  "homepage": "https://homey-android-tv.gitbook.io/en/",
+  "support": "https://homey-android-tv.gitbook.io/en/overview/faq",
   "homeyCommunityTopicId": 44273,
   "drivers": [
     {
