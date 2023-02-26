@@ -1,19 +1,27 @@
-import {AndroidRemoteCert, AndroidRemoteOptions} from "./types";
+import {AndroidRemoteCertificate, AndroidRemoteOptions} from "./types";
 
-const AndroidRemote = require("androidtv-remote");
+import { AndroidRemote, RemoteKeyCode, RemoteDirection } from "androidtv-remote";
+import {match} from "assert";
+
+enum HDMIInput {
+    HDMI1 = 1,
+    HDMI2 = 2,
+    HDMI3 = 3,
+    HDMI4 = 4
+}
 
 export default class AndroidTVRemoteClient {
     private client?: any;
 
-    private host: string;
-    private pairing_port: number;
-    private remote_port: number;
-    private client_name: string;
-    private cert: AndroidRemoteCert;
+    private readonly host: string;
+    private readonly pairing_port: number;
+    private readonly remote_port: number;
+    private readonly client_name: string;
+    private readonly cert: AndroidRemoteCertificate;
 
     constructor(
         host: string,
-        cert: AndroidRemoteCert = {},
+        cert: AndroidRemoteCertificate = {},
         client_name: string = 'androidtv-remote',
         pairing_port: number = 6467,
         remote_port: number = 6466
@@ -31,7 +39,7 @@ export default class AndroidTVRemoteClient {
         this.client = new AndroidRemote(this.host, this.getOptions());
     }
 
-    public on(event: string, callback: (any) => void)
+    public on(event: string, callback: (data: any) => void)
     {
         this.client.on(event, callback);
     }
@@ -40,23 +48,13 @@ export default class AndroidTVRemoteClient {
         return await this.client.start();
     }
 
-    checkSettings = async (): Promise<void> => {
-        if (!this.host) {
-            throw new Error("Please check your settings and try again.");
-        }
+    public async sendCode(code: string): Promise<boolean> {
+        return await this.client.sendCode(code);
+    }
 
-
-        try {
-            const equipmentListResponse =
-                AndroidTVRemoteClient.fetchApiEndpoint<EquipmentListResponse>(equipmentUrl);
-
-            if ((await equipmentListResponse).reporters.count < 1) {
-                throw new Error("No SolarEdge inverters were found in this site");
-            }
-        } catch (e) {
-            // Check if equipment is available within site
-        }
-    };
+    public async getCertificate(): Promise<AndroidRemoteCertificate> {
+        return await this.client.getCertificate();
+    }
 
     private getOptions(): AndroidRemoteOptions {
         return <AndroidRemoteOptions>{
@@ -65,6 +63,64 @@ export default class AndroidTVRemoteClient {
             name: this.client_name,
             cert: this.cert
         };
+    }
+
+    public mute(): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MUTE, RemoteDirection.SHORT)
+    }
+
+    public volumeUp(): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_VOLUME_UP, RemoteDirection.SHORT)
+    }
+
+    public volumeDown(): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_VOLUME_DOWN, RemoteDirection.SHORT)
+    }
+
+    public back(): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_BACK, RemoteDirection.SHORT)
+    }
+
+    public home(): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_HOME, RemoteDirection.SHORT)
+    }
+
+    public select(): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_BUTTON_SELECT, RemoteDirection.SHORT)
+    }
+
+    public setHDMIInput(input: HDMIInput): void {
+        if (input === HDMIInput.HDMI1) {
+            this.client.sendKey(RemoteKeyCode.KEYCODE_TV_INPUT_HDMI_1, RemoteDirection.SHORT)
+        }
+        else if (input === HDMIInput.HDMI2) {
+            this.client.sendKey(RemoteKeyCode.KEYCODE_TV_INPUT_HDMI_2, RemoteDirection.SHORT)
+        }
+        else if (input === HDMIInput.HDMI3) {
+            this.client.sendKey(RemoteKeyCode.KEYCODE_TV_INPUT_HDMI_3, RemoteDirection.SHORT)
+        }
+        else if (input === HDMIInput.HDMI4) {
+            this.client.sendKey(RemoteKeyCode.KEYCODE_TV_INPUT_HDMI_4, RemoteDirection.SHORT)
+        }
+        else {
+            throw new Error('Invalid HDMI input');
+        }
+    }
+
+    public tv(): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_TV, RemoteDirection.SHORT)
+    }
+
+    public openApplication(application: string): void {
+        this.client.sendAppLink(application);
+    }
+
+    public sendPower(): void {
+        this.client.sendPower()
+    }
+
+    public stop(): void {
+        this.client.stop()
     }
 
 }

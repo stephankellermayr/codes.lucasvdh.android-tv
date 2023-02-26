@@ -1,81 +1,78 @@
-import { Remote } from "../../remote";
-import { DeviceData, DeviceSettings } from "./types";
+import {Remote} from "../../remote";
+import {DeviceData, DeviceSettings, SettingsInput} from "./types";
 import AndroidTVRemoteClient from "./client";
 
 class RemoteDevice extends Remote {
-  client?: AndroidTVRemoteClient;
+    client?: AndroidTVRemoteClient;
 
-  async initializeClient() {
-    const data: DeviceData = this.getData();
-    const settings: DeviceSettings = this.getSettings();
+    async initializeClient() {
+        const data: DeviceData = this.getData();
+        const settings: DeviceSettings = this.getSettings();
 
-    this.client = new AndroidTVRemoteClient(
-        settings.ip,
-        {secret: data.secret}
-    );
+        this.client = new AndroidTVRemoteClient(
+            settings.ip,
+            data.cert
+        );
+        await this.client.start();
 
-    this.initializeListeners()
-  }
+        this.client.on('ready', () => {
+            this.log("Client has been initialized")
+            this.setAvailable();
+        })
 
-  private initializeListeners()
-  {
-    if (!this.client) {
-      throw new Error('Client not initialized');
+        this.initializeListeners()
     }
 
-    this.client.on('powered', (powered) => {
-      console.debug("Powered : " + powered)
-    });
+    private initializeListeners() {
+        if (!this.client) {
+            throw new Error('Client not initialized');
+        }
 
-    this.client.on('volume', (volume) => {
-      console.debug("Volume : " + volume.level + '/' + volume.maximum + " | Muted : " + volume.muted);
-    });
+        this.client.on('powered', async (powered) => {
+            await this.setCapabilityValue('onoff', powered);
+        });
 
-    this.client.on('current_app', (current_app) => {
-      console.debug("Current App : " + current_app);
-    });
+        this.client.on('volume', async (volume) => {
+            await this.setCapabilityValue('volume', volume.level);
+            this.log('volume', volume);
+            this.log("Volume : " + volume.level + '/' + volume.maximum + " | Muted : " + volume.muted);
+        });
 
-    // this.client.on('ready', async () => {
-    //   let cert = this.client.getCertificate();
-    //
-    //   this.client.sendKey(RemoteKeyCode.MUTE, RemoteDirection.SHORT)
-    //
-    //   this.client.sendAppLink("https://www.disneyplus.com");
-    // });
-  }
+        this.client.on('current_app', (current_app) => {
+            // this.setCapabilityValue('current_application', current_app);
+        });
 
-  async onSettings({
-    newSettings,
-    changedKeys,
-  }: {
-    newSettings: object;
-    changedKeys: string[];
-  }) {
-    // TODO: fix typing once Athom fixes their TypeScript implementation
-    const typedNewSettings = newSettings as DeviceSettings;
+        this.client.on('unpaired', async () => {
+            await this.setUnavailable(this.homey.__('error.unpaired'));
+        });
 
-    // if (changedKeys.includes("key")) {
-    //   const data: DeviceData = this.getData();
-    //   const newApi = new SolarEdgeApi(
-    //     typedNewSettings.key,
-    //     data.sid,
-    //     data.serial_number,
-    //     this.homey.clock.getTimezone()
-    //   );
-    //
-    //   await newApi.checkSettings();
-    //
-    //   this.client = newApi;
-    //
-    //   // Force production check when API key is changed
-    //   this.checkProduction();
-    // }
-    //
-    // if (changedKeys.includes("interval") && typedNewSettings.interval) {
-    //   this.resetInterval(typedNewSettings.interval);
-    //   this.homey.log(`Changed interval to ${typedNewSettings.interval}`);
-    // }
-  }
+        this.client.on('secret', async () => {
+            await this.setUnavailable(this.homey.__('error.unpaired'));
+        });
+
+        this.client.on('error', async () => {
+            // TODO: is this necessary?
+            await this.reloadClient(60);
+        });
+    }
+
+    async onSettings({newSettings, changedKeys}: SettingsInput) {
+        if (changedKeys.includes("ip")) {
+            await this.reloadClient();
+        }
+    }
+
+    private async reloadClient(timeoutInSeconds: number | null = null) {
+        try {
+            this.client?.stop()
+        } finally {
+            if (timeoutInSeconds !== null) {
+                await this.homey.setTimeout(this.initializeClient.bind(this), timeoutInSeconds * 1000);
+            } else {
+                await this.initializeClient();
+            }
+        }
+    }
 }
 
 module.exports = RemoteDevice;

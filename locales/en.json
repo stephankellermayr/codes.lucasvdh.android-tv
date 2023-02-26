@@ -1,1 +1,5 @@
-{}
+{
+  "error": {
+    "unpaired": "The device was un-paired and needs to be re-paired"
+  }
+}

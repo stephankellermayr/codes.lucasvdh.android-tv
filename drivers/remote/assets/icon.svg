@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>devices / overrides /  tv</title>
-    <g id="devices-/-overrides-/--tv" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
-        <path d="M240.718473,836.413887 L357.187688,794.27959 L362.956039,805.111798 C384.595514,847.057174 397.865458,871.623457 402.765872,878.810646 C407.666286,885.997835 563.37599,865.698818 869.894983,817.913593 L741.700934,758.995731 L648.054946,790.592422 L240.718473,836.413887 Z" id="Path-178" stroke="#000000" stroke-width="40" stroke-linecap="round"></path>
-        <path d="M77.2440925,70.014895 L922.479674,164.140787 L934.363116,714.250247 L80.1336725,798.055698 L38.8928003,773.609307 L38.8928003,81.0846268 L77.2440925,70.014895 Z" id="Path-179" stroke="#000000" stroke-width="40"></path>
-        <polygon id="Path-179" stroke="#000000" stroke-width="20" stroke-linecap="round" points="79.478505 80.2201447 85.3074917 789.377469 930.035539 705.418904 918.723488 174.902804"></polygon>
-        <polygon id="Path-179" stroke="#000000" stroke-width="20" stroke-linecap="round" points="117.669422 122.855935 122.974953 751.059227 891.844622 676.684973 881.548417 206.730072"></polygon>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 213">
+    <title>Remote Driver Icon</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path d="M67.77,0H16.23A16.23,16.23,0,0,0,0,16.23V196.77A16.23,16.23,0,0,0,16.23,213H67.77A16.23,16.23,0,0,0,84,196.77V16.23A16.23,16.23,0,0,0,67.77,0ZM42,15A12,12,0,1,1,30,27,12,12,0,0,1,42,15Zm0,129a12,12,0,1,1,12-12A12,12,0,0,1,42,144Zm0-35A29,29,0,1,1,71,80,29,29,0,0,1,42,109Z"/>
+            <circle cx="42" cy="80" r="13"/>
+        </g>
     </g>
 </svg>

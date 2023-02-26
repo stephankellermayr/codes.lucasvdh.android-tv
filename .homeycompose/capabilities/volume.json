@@ -1,0 +1,11 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Volume",
+    "nl": "Volume"
+  },
+  "uiComponent": "slider",
+  "getable": true,
+  "setable": false,
+  "uiQuickAction": true
+}

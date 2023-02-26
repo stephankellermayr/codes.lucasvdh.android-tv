@@ -131,19 +131,30 @@
 //   apiKey: string;
 // }
 
-export interface AndroidRemoteCert {
-  secret?: string;
+export interface AndroidRemoteCertificate {
+  key?: string;
+  cert?: string;
 }
 
 export interface AndroidRemoteOptions {
   pairing_port: number;
   remote_port: number;
   name: string;
-  cert: AndroidRemoteCert,
+  cert: AndroidRemoteCertificate,
 }
 
 export interface DeviceData {
-  secret: string;
+  id: string;
+  cert: AndroidRemoteCertificate,
+}
+
+export interface SettingsInput {
+  newSettings: NewSettings
+  changedKeys: Array<string>
+}
+
+export interface NewSettings {
+  ip?: string | null;
 }
 
 export interface DeviceSettings {
