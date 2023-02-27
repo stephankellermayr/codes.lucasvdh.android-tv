@@ -94,11 +94,18 @@
     "key_play",
     "key_pause",
     "key_stop",
+    "key_rewind",
+    "key_fast_forward",
+    "key_cursor_up",
+    "key_cursor_right",
+    "key_cursor_down",
+    "key_cursor_left",
     "key_back",
-    "key_confirm",
     "key_home",
+    "key_confirm",
     "key_previous",
     "key_next",
-    "key_watch_tv"
+    "key_watch_tv",
+    "key_source"
   ]
 }

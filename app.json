@@ -107,6 +107,186 @@
   "homepage": "https://homey-android-tv.gitbook.io/en/",
   "support": "https://homey-android-tv.gitbook.io/en/overview/faq",
   "homeyCommunityTopicId": 44273,
+  "flow": {
+    "triggers": [
+      {
+        "id": "application_opened",
+        "title": {
+          "en": "An app was opened",
+          "nl": "Er is een app geopend",
+          "de": "Eine App wurde geöffnet",
+          "fr": "Une application a été ouverte",
+          "it": "È stata aperta un'app",
+          "sv": "En app har öppnats",
+          "no": "En app ble åpnet",
+          "es": "Se abrió una aplicación",
+          "da": "En app blev åbnet",
+          "pl": "Otwarto aplikację"
+        },
+        "tokens": [
+          {
+            "name": "app",
+            "type": "string",
+            "title": {
+              "nl": "App",
+              "en": "App",
+              "de": "App",
+              "fr": "Application",
+              "it": "App",
+              "sv": "App",
+              "no": "App",
+              "es": "Aplicación",
+              "da": "App",
+              "pl": "Aplikacja"
+            },
+            "example": "Netflix"
+          }
+        ],
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=philips-jointspace"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "highlight": true,
+        "id": "open_application",
+        "title": {
+          "en": "Open an application",
+          "nl": "Open een app",
+          "de": "Öffne eine Anwendung",
+          "fr": "Ouvrir une application",
+          "it": "Aprire un'applicazione",
+          "sv": "Öppna en applikation",
+          "no": "Åpne en applikasjon",
+          "es": "Abrir una aplicación",
+          "da": "Åben en applikation",
+          "pl": "Otwórz aplikację"
+        },
+        "titleFormatted": {
+          "en": "Open app [[app]]",
+          "nl": "Open app [[app]]",
+          "de": "Öffne App [[app]]",
+          "fr": "Ouvrir l'application [[app]]",
+          "it": "Apri app [[app]]",
+          "sv": "Öppna app [[app]]",
+          "no": "Åpne app [[app]]",
+          "es": "Abrir aplicación [[app]]",
+          "da": "Åben app [[app]]",
+          "pl": "Otwórz aplikację [[app]]"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=philips-jointspace"
+          },
+          {
+            "name": "app",
+            "type": "autocomplete"
+          }
+        ]
+      },
+      {
+        "id": "select_source",
+        "title": {
+          "en": "Select a source",
+          "nl": "Selecteer een input",
+          "de": "Wähle eine Quelle",
+          "fr": "Sélectionnez une source",
+          "it": "Seleziona una sorgente",
+          "sv": "Välj en källa",
+          "no": "Velg en kilde",
+          "es": "Seleccione una fuente",
+          "da": "Vælg en kilde",
+          "pl": "Wybierz źródło"
+        },
+        "titleFormatted": {
+          "en": "Select source [[source]]",
+          "nl": "Selecteer input [[source]]",
+          "de": "Wähle Quelle [[source]]",
+          "fr": "Sélectionnez la source [[source]]",
+          "it": "Seleziona sorgente [[source]]",
+          "sv": "Välj källa [[source]]",
+          "no": "Velg kilde [[source]]",
+          "es": "Seleccione fuente [[source]]",
+          "da": "Vælg kilde [[source]]",
+          "pl": "Wybierz źródło [[source]]"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=remote"
+          },
+          {
+            "name": "source",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "HDMI1",
+                "title": {
+                  "en": "HDMI 1"
+                }
+              },
+              {
+                "id": "HDMI2",
+                "title": {
+                  "en": "HDMI 2"
+                }
+              },
+              {
+                "id": "HDMI3",
+                "title": {
+                  "en": "HDMI 3"
+                }
+              },
+              {
+                "id": "HDMI4",
+                "title": {
+                  "en": "HDMI 4"
+                }
+              },
+              {
+                "id": "VGA",
+                "title": {
+                  "en": "VGA"
+                }
+              },
+              {
+                "id": "COMPONENT1",
+                "title": {
+                  "en": "Component 1"
+                }
+              },
+              {
+                "id": "COMPONENT2",
+                "title": {
+                  "en": "Component 2"
+                }
+              },
+              {
+                "id": "COMPOSITE1",
+                "title": {
+                  "en": "Composite 1"
+                }
+              },
+              {
+                "id": "COMPOSITE2",
+                "title": {
+                  "en": "Composite 2"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "drivers": [
     {
       "name": {
@@ -204,12 +384,19 @@
         "key_play",
         "key_pause",
         "key_stop",
+        "key_rewind",
+        "key_fast_forward",
+        "key_cursor_up",
+        "key_cursor_right",
+        "key_cursor_down",
+        "key_cursor_left",
         "key_back",
-        "key_confirm",
         "key_home",
+        "key_confirm",
         "key_previous",
         "key_next",
-        "key_watch_tv"
+        "key_watch_tv",
+        "key_source"
       ],
       "id": "remote",
       "settings": [
@@ -324,6 +511,18 @@
       "uiQuickAction": true,
       "icon": "assets/capabilities/cursor_up.svg"
     },
+    "key_fast_forward": {
+      "type": "boolean",
+      "title": {
+        "en": "Fast forward",
+        "nl": "Doorspoelen"
+      },
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true,
+      "icon": "assets/capabilities/fast_forward.svg"
+    },
     "key_home": {
       "type": "boolean",
       "title": {
@@ -383,6 +582,18 @@
       "uiComponent": "button",
       "uiQuickAction": true,
       "icon": "assets/capabilities/previous.svg"
+    },
+    "key_rewind": {
+      "type": "boolean",
+      "title": {
+        "en": "Rewind",
+        "nl": "Terugspoelen"
+      },
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true,
+      "icon": "assets/capabilities/rewind.svg"
     },
     "key_source": {
       "type": "boolean",
@@ -453,7 +664,10 @@
       "uiComponent": "slider",
       "getable": true,
       "setable": false,
-      "uiQuickAction": true
+      "uiQuickAction": true,
+      "min": 0,
+      "max": 15,
+      "step": 1
     }
   },
   "discovery": {

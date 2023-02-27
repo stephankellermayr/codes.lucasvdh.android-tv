@@ -1,5 +1,31 @@
 {
+  "pair": {
+    "add_by_ip": {
+      "title": "Manually add",
+      "ip": "IP address",
+      "no_new_devices_hint": "All found TVs are already added. Try to add your TV manually.",
+      "need_help_pairing": "Need help pairing?",
+      "click_here_documentation": "Click here to view the documentation."
+    },
+    "authenticate": {
+      "intro": "Enter the code displayed on the TV",
+      "submit": "Submit"
+    },
+    "verify": {
+      "verifying": "Verifying Wake-on-LAN configuration...",
+      "verified": "Wake-on-LAN is enabled and working correctly!",
+      "errorTitle": "Could not verify WOL",
+      "errorDescription": "The on/off behavior of the TV may not work as expected if Wake-on-LAN is not enabled. <br/> When your TV is put in standby mode, you can control it for about 10 minutes before it is fully turned off. Without Wake-on-LAN, there is no way to turn your TV back on after this.",
+      "confirm": "Understood"
+    },
+    "add_device": {
+      "title": "Add Device"
+    }
+  },
   "error": {
-    "unpaired": "The device was un-paired and needs to be re-paired"
+    "generic": "An unexpected error occurred",
+    "unpaired": "The device was un-paired and needs to be re-paired",
+    "device_not_found": "Device not found",
+    "something_went_wrong": "Something went wrong"
   }
 }

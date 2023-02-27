@@ -1,0 +1,94 @@
+{
+  "id": "select_source",
+  "title": {
+    "en": "Select a source",
+    "nl": "Selecteer een input",
+    "de": "Wähle eine Quelle",
+    "fr": "Sélectionnez une source",
+    "it": "Seleziona una sorgente",
+    "sv": "Välj en källa",
+    "no": "Velg en kilde",
+    "es": "Seleccione una fuente",
+    "da": "Vælg en kilde",
+    "pl": "Wybierz źródło"
+  },
+  "titleFormatted": {
+    "en": "Select source [[source]]",
+    "nl": "Selecteer input [[source]]",
+    "de": "Wähle Quelle [[source]]",
+    "fr": "Sélectionnez la source [[source]]",
+    "it": "Seleziona sorgente [[source]]",
+    "sv": "Välj källa [[source]]",
+    "no": "Velg kilde [[source]]",
+    "es": "Seleccione fuente [[source]]",
+    "da": "Vælg kilde [[source]]",
+    "pl": "Wybierz źródło [[source]]"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=remote"
+    },
+    {
+      "name": "source",
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "HDMI1",
+          "title": {
+            "en": "HDMI 1"
+          }
+        },
+        {
+          "id": "HDMI2",
+          "title": {
+            "en": "HDMI 2"
+          }
+        },
+        {
+          "id": "HDMI3",
+          "title": {
+            "en": "HDMI 3"
+          }
+        },
+        {
+          "id": "HDMI4",
+          "title": {
+            "en": "HDMI 4"
+          }
+        },
+        {
+          "id": "VGA",
+          "title": {
+            "en": "VGA"
+          }
+        },
+        {
+          "id": "COMPONENT1",
+          "title": {
+            "en": "Component 1"
+          }
+        },
+        {
+          "id": "COMPONENT2",
+          "title": {
+            "en": "Component 2"
+          }
+        },
+        {
+          "id": "COMPOSITE1",
+          "title": {
+            "en": "Composite 1"
+          }
+        },
+        {
+          "id": "COMPOSITE2",
+          "title": {
+            "en": "Composite 2"
+          }
+        }
+      ]
+    }
+  ]
+}
