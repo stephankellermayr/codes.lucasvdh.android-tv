@@ -1,6 +1,6 @@
 {
-  "name": "it.diederik.solar",
-  "version": "5.0.0",
+  "name": "codes.lucasvdh.android-tv",
+  "version": "0.0.1",
   "main": "app.ts",
   "scripts": {
     "homey-validate": "homey app validate --level verified",
@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "androidtv-remote": "^1.0.10",
-    "node-fetch": "^2.6.7",
     "source-map-support": "^0.5.20"
   },
   "devDependencies": {

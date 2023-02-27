@@ -3,14 +3,9 @@ import AndroidTVRemoteClient from "./client";
 import {Device as DeviceType} from "./types";
 
 class RemoteDriver extends Driver {
-    pairingClient?: AndroidTVRemoteClient;
 
     async onInit(): Promise<void> {
         this.log("Driver has been initialised");
-    }
-
-    handleDiscoveryResult(discoveryResult: any) {
-        this.log("Got result:", discoveryResult);
     }
 
     async onPair(session: any): Promise<void> {
@@ -24,7 +19,7 @@ class RemoteDriver extends Driver {
             this.log('Show view', view)
 
             if (view === 'discover') {
-                let discoveredDevices = this.getDiscovedDevices(discoveryStrategy)
+                let discoveredDevices = this.getDiscoveredDevices(discoveryStrategy)
                 let hasDiscoveredDevices = false
                 devices = discoveredDevices.filter(item => {
                     if (item === null) {
@@ -105,60 +100,6 @@ class RemoteDriver extends Driver {
 
             return pairingDevice
         })
-
-        // const pairingClient = this.getPairingClientByIp(discoveryResult.address);
-
-        // this.log('pairingClient.start()');
-        // pairingClient.start();
-
-        // this.discovery('android-tv');
-
-        // this.client.on('secret', () => {
-        //   line.question("Code : ", async (code) => {
-        //     this.client.sendCode(code);
-        //   });
-        // });
-        //
-        // session.setHandler("validate", async (data: PairData) => {
-        //   this.homey.log("Pair data received");
-        //
-        //   const { apiKey } = data;
-        //   this.apiKey = apiKey;
-        //
-        //   return new SolarEdgeApi(apiKey).getSites();
-        // });
-        //
-        // session.setHandler("list_devices", async () => {
-        //   this.homey.log("Listing devices");
-        //
-        //   const devicesList: Device[] = [];
-        //
-        //   if (this.apiKey) {
-        //     const sitesList = await new SolarEdgeApi(this.apiKey).getSites();
-        //
-        //     for (const site of sitesList.sites.site) {
-        //       const equipmentList = await new SolarEdgeApi(
-        //         this.apiKey,
-        //         site.id
-        //       ).getEquipmentList();
-        //
-        //       const inverterCount = equipmentList.reporters.list.length;
-        //
-        //       for (const reporter of equipmentList.reporters.list) {
-        //         devicesList.push({
-        //           name: `${reporter.name} (${reporter.manufacturer} ${reporter.model})`,
-        //           data: {
-        //             sid: site.id,
-        //             serial_number: reporter.serialNumber,
-        //           },
-        //           settings: { key: this.apiKey, interval: 15 * inverterCount },
-        //         });
-        //       }
-        //     }
-        //   }
-        //
-        //   return devicesList;
-        // });
     }
 
     private getPairingClientByDevice(device: DeviceType): AndroidTVRemoteClient {
@@ -190,7 +131,7 @@ class RemoteDriver extends Driver {
         return name;
     }
 
-    private getDiscovedDevices(discoveryStrategy: DiscoveryStrategy): Array<DeviceType> {
+    private getDiscoveredDevices(discoveryStrategy: DiscoveryStrategy): Array<DeviceType> {
         const discoveryResults = discoveryStrategy.getDiscoveryResults();
 
         return Object.values(discoveryResults)
