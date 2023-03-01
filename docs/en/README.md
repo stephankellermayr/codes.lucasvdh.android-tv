@@ -1,6 +1,6 @@
 ---
 description: Learn about the Android TV app for Homey
-cover: .gitbook/assets/homey-android-tv-banner.jpg
+cover: .gitbook/assets/xlarge.png
 coverY: 0
 ---
 
@@ -16,7 +16,7 @@ Experience a new level of convenience and control with the Android TV app for Ho
 
 
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>Homey App Store</strong></td><td>Click here to open the Homey App Store</td><td><a href="https://homey.app/en-gb/app/codes.lucasvdh.android-tv">https://homey.app/en-gb/app/codes.lucasvdh.android-tv</a></td><td><a href=".gitbook/assets/xlarge.png">xlarge.png</a></td></tr><tr><td><strong>Source code</strong></td><td>Want to view the source code? Click here to open Github.</td><td><a href="https://github.com/lucasvdh/codes.lucasvdh.android-tv">https://github.com/lucasvdh/codes.lucasvdh.android-tv</a></td><td><a href=".gitbook/assets/codes.lucasvdh.android-tv.png">codes.lucasvdh.android-tv.png</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>Homey App Store</strong></td><td>Click here to open the Homey App Store</td><td><a href="https://homey.app/en-gb/app/codes.lucasvdh.android-tv">https://homey.app/en-gb/app/codes.lucasvdh.android-tv</a></td><td><a href=".gitbook/assets/large.png">large.png</a></td></tr><tr><td><strong>Source code</strong></td><td>Want to view the source code? Click here to open Github.</td><td><a href="https://github.com/lucasvdh/codes.lucasvdh.android-tv">https://github.com/lucasvdh/codes.lucasvdh.android-tv</a></td><td><a href=".gitbook/assets/codes.lucasvdh.philips-jointspace.png">codes.lucasvdh.philips-jointspace.png</a></td></tr></tbody></table>
 
 ## Disclaimer
 
