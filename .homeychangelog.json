@@ -1,5 +1,26 @@
 {
-  "0.0.1": {
-    "en": "First version"
+  "0.1.0": {
+    "en": "First version",
+    "nl": "Eerste versie",
+    "de": "Erste Version",
+    "fr": "Première version",
+    "it": "Prima versione",
+    "sv": "Första versionen",
+    "no": "Første versjon",
+    "es": "Primera versión",
+    "da": "Første version",
+    "pl": "Pierwsza wersja"
+  },
+  "0.2.0": {
+    "en": "Added new driver images and app store descriptions in more languages",
+    "nl": "Nieuwe driver afbeeldingen en app store beschrijvingen toegevoegd in meer talen",
+    "de": "Neue Treiberbilder und App-Store-Beschreibungen in weiteren Sprachen hinzugefügt",
+    "fr": "Ajout de nouvelles images de pilote et de descriptions de magasin d'applications dans plus de langues",
+    "it": "Aggiunte nuove immagini di driver e descrizioni dell'app store in più lingue",
+    "sv": "Lagt till nya drivrutinsbilder och appbutikbeskrivningar på fler språk",
+    "no": "La til nye driverbilder og appbutikkbeskrivelser på flere språk",
+    "es": "Agregadas nuevas imágenes de controlador y descripciones de la tienda de aplicaciones en más idiomas",
+    "da": "Tilføjet nye driverbilleder og app store beskrivelser på flere sprog",
+    "pl": "Dodano nowe obrazy sterowników i opisy sklepu aplikacji w więcej językach"
   }
 }
