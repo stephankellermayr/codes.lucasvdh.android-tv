@@ -1,6 +1,6 @@
 ---
 description: Learn about the Android TV app for Homey
-cover: .gitbook/assets/xlarge.png
+cover: .gitbook/assets/homey-android-tv-banner-large.jpg
 coverY: 0
 ---
 
@@ -14,9 +14,7 @@ With this app, you can trigger flows based on changes in your TV's state, such a
 
 Experience a new level of convenience and control with the Android TV app for Homey.
 
-
-
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>Homey App Store</strong></td><td>Click here to open the Homey App Store</td><td><a href="https://homey.app/en-gb/app/codes.lucasvdh.android-tv">https://homey.app/en-gb/app/codes.lucasvdh.android-tv</a></td><td><a href=".gitbook/assets/large.png">large.png</a></td></tr><tr><td><strong>Source code</strong></td><td>Want to view the source code? Click here to open Github.</td><td><a href="https://github.com/lucasvdh/codes.lucasvdh.android-tv">https://github.com/lucasvdh/codes.lucasvdh.android-tv</a></td><td><a href=".gitbook/assets/codes.lucasvdh.philips-jointspace.png">codes.lucasvdh.philips-jointspace.png</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>Homey App Store</strong></td><td>Click here to open the Homey App Store</td><td><a href="https://homey.app/en-gb/app/codes.lucasvdh.android-tv">https://homey.app/en-gb/app/codes.lucasvdh.android-tv</a></td><td><a href="../../assets/images/xlarge.png">xlarge.png</a></td></tr><tr><td><strong>Source code</strong></td><td>Want to view the source code? Click here to open Github.</td><td><a href="https://github.com/lucasvdh/codes.lucasvdh.android-tv">https://github.com/lucasvdh/codes.lucasvdh.android-tv</a></td><td><a href=".gitbook/assets/codes.lucasvdh.android-tv.png">codes.lucasvdh.android-tv.png</a></td></tr></tbody></table>
 
 ## Disclaimer
 
