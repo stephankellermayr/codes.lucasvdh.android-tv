@@ -22,5 +22,17 @@
     "es": "Agregadas nuevas imágenes de controlador y descripciones de la tienda de aplicaciones en más idiomas",
     "da": "Tilføjet nye driverbilleder og app store beskrivelser på flere sprog",
     "pl": "Dodano nowe obrazy sterowników i opisy sklepu aplikacji w więcej językach"
+  },
+  "0.2.1": {
+    "en": "Fix incorrect link to pairing documentation",
+    "nl": "Fix onjuiste link naar koppelingsdocumentatie",
+    "de": "Beheben Sie den falschen Link zur Pairing-Dokumentation",
+    "fr": "Corriger le lien incorrect vers la documentation de jumelage",
+    "it": "Correggi il link errato alla documentazione dell'accoppiamento",
+    "sv": "Fixa felaktig länk till parningsdokumentation",
+    "no": "Fiks feilaktig lenke til sammenkoblingsdokumentasjon",
+    "es": "Corregir el enlace incorrecto a la documentación de emparejamiento",
+    "da": "Fix forkert link til paringsdokumentation",
+    "pl": "Napraw nieprawidłowe połączenie do dokumentacji parowania"
   }
 }
