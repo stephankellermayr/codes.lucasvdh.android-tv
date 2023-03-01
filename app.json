@@ -9,16 +9,16 @@
     "en": "Android TV"
   },
   "description": {
-    "en": "Turn your living room into a smart cinema with Homey and Android TV!",
-    "nl": "Maak van je woonkamer een smart cinema met Homey en Android TV!",
-    "de": "Verwandeln Sie Ihr Wohnzimmer mit Homey und Android TV in ein Smart Cinema!",
-    "fr": "Transformez votre salon en une salle de cinéma intelligente avec Homey et Android TV !",
-    "it": "Trasforma il tuo soggiorno in una smart cinema con Homey e Android TV!",
-    "sv": "Gör ditt vardagsrum till en smart biograf med Homey och Android TV!",
-    "no": "Gjør stuen din om til et smart kino med Homey og Android TV!",
-    "es": "Convierta su sala de estar en un cine inteligente con Homey y Android TV!",
-    "da": "Gør dit stue til et smart cinema med Homey og Android TV!",
-    "pl": "Przekształć swój salon w inteligentne kino za pomocą Homey i Android TV!"
+    "en": "Take control of your TV experience",
+    "nl": "Neem controle over je tv-ervaring",
+    "de": "Übernehmen Sie die Kontrolle über Ihr TV-Erlebnis",
+    "fr": "Prenez le contrôle de votre expérience TV",
+    "it": "Prendi il controllo della tua esperienza televisiva",
+    "sv": "Ta kontroll över din TV-upplevelse",
+    "no": "Ta kontroll over din TV-opplevelse",
+    "es": "Toma el control de tu experiencia en TV",
+    "da": "Tag kontrol over din TV-oplevelse",
+    "pl": "Zyskaj kontrolę nad swoim doświadczeniem telewizyjnym"
   },
   "category": "video",
   "platforms": [
@@ -366,8 +366,8 @@
         }
       ],
       "images": {
-        "large": "/drivers/remote/assets/images/large.jpg",
-        "small": "/drivers/remote/assets/images/small.jpg"
+        "large": "/drivers/remote/assets/images/large.png",
+        "small": "/drivers/remote/assets/images/small.png"
       },
       "platforms": [
         "local"
