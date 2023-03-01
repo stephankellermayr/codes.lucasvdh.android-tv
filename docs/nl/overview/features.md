@@ -1,25 +1,32 @@
 ---
-description: Welcome to the feature page of the Homey Android TV app!
+description: Welkom bij het functieoverzicht van de Homey Android TV-app!
 ---
 
-# Features
+# Functies
 
-This app was developed to bring your Android TV into the smart home ecosystem of Homey. With this app, you can control your TV, automate it, and even have it trigger events in your home.&#x20;
+Deze app is ontwikkeld om uw Android TV in het smart home-ecosysteem van Homey te integreren. Met deze app kunt u uw TV
+bedienen, automatiseren en zelfs gebeurtenissen in uw huis activeren.
 
-This page will give you a detailed overview of all the features currently provided by the Homey Android TV app, and how you can use them to create a smart and connected home. Whether you want to turn your TV on and off automatically, adjust the volume based on the time of day, or change the channel based on your mood, the Homey Android TV app has got you covered.
+Op deze pagina vindt u een gedetailleerd overzicht van alle functies die momenteel worden aangeboden door de Homey
+Android TV-app en hoe u ze kunt gebruiken om een slim en verbonden huis te creëren. Of u nu uw TV automatisch aan en uit
+wilt zetten, het volume wilt aanpassen op basis van het tijdstip van de dag of het kanaal wilt veranderen op basis van
+uw stemming, de Homey Android TV-app heeft u gedekt.
 
-## Flow cards
+## Flow-kaarten
 
-Flow cards are on of the core feature on which Homey relies. With Flow cards, Homey users can automate their home. A Flow is a series of _Flow cards_, which are evaluated and executed.&#x20;
+Flow-kaarten zijn een van de kernfuncties waarop Homey zich richt. Met Flow-kaarten kunnen Homey-gebruikers hun huis
+automatiseren. Een Flow is een reeks Flow-kaarten die worden geëvalueerd en uitgevoerd.
 
-A Flow consists of cards in three columns: _when_, _and_, _then_. The Homey Android TV app provides Flow cards in each of these categories which are listed below. So, dive in and discover the full range of flow features available to you!
+Een Flow bestaat uit kaarten in drie kolommen: _wanneer_, _en_, _dan_. De Homey Android TV-app biedt Flow-kaarten in elk
+van deze categorieën die hieronder worden vermeld. Dus, duik erin en ontdek het volledige scala aan flow-functies die
+voor u beschikbaar zijn!
 
-**Triggers**
+#### Triggers (wanneer)
 
-These cards are used to trigger flows.
+Deze kaarten worden gebruikt om flows te activeren.
 
 {% hint style="info" %}
-When "**TV is turned on**" then "Dim the lights".
+Wanneer "**TV gaat aan**" dan "Dim de verlichting".
 {% endhint %}
 
 <table data-view="cards">
@@ -45,12 +52,12 @@ When "**TV is turned on**" then "Dim the lights".
     </tbody>
 </table>
 
-#### Conditions
+#### Voorwaarden (en)
 
-These cards are used in flows as a condition.
+Deze kaarten worden in flows gebruikt als voorwaarde.
 
 {% hint style="info" %}
-When "Nobody home" and "**TV is turned on**" then "Turn off TV".
+Wanneer "Niemand thuis" en "**TV staat aan**" dan "Zet de TV uit".
 {% endhint %}
 
 <table data-view="cards">
@@ -72,12 +79,12 @@ When "Nobody home" and "**TV is turned on**" then "Turn off TV".
     </tbody>
 </table>
 
-#### Actions
+#### Acties (dan)
 
-These cards are used as an action in a flow.
+Deze kaarten worden gebruikt als actie in een flow.
 
 {% hint style="info" %}
-When "Someone arrives at home" then "**Turn on TV**" and "**Open app Spotify**".
+Wanneer "Iemand komt thuis" dan "**Zet de TV aan**" en "**Open de Spotify-app**".
 {% endhint %}
 
 <table data-view="cards">
@@ -137,9 +144,8 @@ When "Someone arrives at home" then "**Turn on TV**" and "**Open app Spotify**".
         <td>Open any app installed on the TV.</td>
     </tr>
     <tr>
-        <td>Coming soon:  <strong>Select source</strong></td>
+        <td>Coming soon: <strong>Select source</strong></td>
         <td></td>
     </tr>
     </tbody>
 </table>
-
