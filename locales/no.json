@@ -1,0 +1,39 @@
+{
+  "pair": {
+    "add_by_ip": {
+      "title": "Legg til manuelt",
+      "ip": "IP-adresse",
+      "no_new_devices_hint": "Alle tilgjengelige TV-er er allerede lagt til. Prøv å legge til TV-en manuelt.",
+      "need_help_pairing": "Trenger hjelp med sammenkobling?",
+      "click_here_documentation": "Klikk her for å se dokumentasjonen."
+    },
+    "add_device": {
+      "title": "Legg til enhet"
+    }
+  },
+  "error": {
+    "generic": "Det oppstod en uventet feil",
+    "unpaired": "Enheten er frakoblet og må kobles til på nytt",
+    "device_not_found": "Enhet ikke funnet",
+    "something_went_wrong": "Noe gikk galt"
+  },
+  "key": {
+    "stop": "Stopp",
+    "play": "Spill",
+    "pause": "Pause",
+    "rewind": "Spol tilbake",
+    "fast_forward": "Spol fremover",
+    "source": "Kilde",
+    "watch_tv": "Se på TV",
+    "confirm": "Bekreft",
+    "previous": "Forrige",
+    "next": "Neste",
+    "cursor_left": "Pil venstre",
+    "cursor_up": "Pil opp",
+    "cursor_right": "Pil høyre",
+    "cursor_down": "Pil ned",
+    "options": "Alternativer",
+    "back": "Tilbake",
+    "home": "Hjem"
+  }
+}

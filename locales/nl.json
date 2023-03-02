@@ -1,0 +1,39 @@
+{
+  "pair": {
+    "add_by_ip": {
+      "title": "Handmatig toevoegen",
+      "ip": "IP-adres",
+      "no_new_devices_hint": "Alle gevonden televisies zijn al toegevoegd. Probeer je tv handmatig toe te voegen.",
+      "need_help_pairing": "Hulp nodig bij koppelen?",
+      "click_here_documentation": "Klik hier om de documentatie te bekijken."
+    },
+    "add_device": {
+      "title": "Apparaat toevoegen"
+    }
+  },
+  "error": {
+    "generic": "Er is een onverwachte fout opgetreden",
+    "unpaired": "Het apparaat is ontkoppeld en moet opnieuw worden gekoppeld",
+    "device_not_found": "Apparaat niet gevonden",
+    "something_went_wrong": "Er is iets misgegaan"
+  },
+  "key": {
+    "stop": "Stoppen",
+    "play": "Afspelen",
+    "pause": "Pauzeren",
+    "rewind": "Terugspoelen",
+    "fast_forward": "Vooruitspoelen",
+    "source": "Bron",
+    "watch_tv": "TV kijken",
+    "confirm": "Bevestigen",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "cursor_left": "D-pad links",
+    "cursor_up": "D-pad omhoog",
+    "cursor_right": "D-pad rechts",
+    "cursor_down": "D-pad omlaag",
+    "options": "Opties",
+    "back": "Terug",
+    "home": "Start"
+  }
+}

@@ -1,7 +1,6 @@
 import { Device } from "homey";
 
 export class Remote extends Device {
-
   async onInit(): Promise<void> {
     this.log('Device has been initialized');
     await this.setUnavailable();

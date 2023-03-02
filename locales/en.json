@@ -7,17 +7,6 @@
       "need_help_pairing": "Need help pairing?",
       "click_here_documentation": "Click here to view the documentation."
     },
-    "authenticate": {
-      "intro": "Enter the code displayed on the TV",
-      "submit": "Submit"
-    },
-    "verify": {
-      "verifying": "Verifying Wake-on-LAN configuration...",
-      "verified": "Wake-on-LAN is enabled and working correctly!",
-      "errorTitle": "Could not verify WOL",
-      "errorDescription": "The on/off behavior of the TV may not work as expected if Wake-on-LAN is not enabled. <br/> When your TV is put in standby mode, you can control it for about 10 minutes before it is fully turned off. Without Wake-on-LAN, there is no way to turn your TV back on after this.",
-      "confirm": "Understood"
-    },
     "add_device": {
       "title": "Add Device"
     }
@@ -27,5 +16,24 @@
     "unpaired": "The device was un-paired and needs to be re-paired",
     "device_not_found": "Device not found",
     "something_went_wrong": "Something went wrong"
+  },
+  "key": {
+    "stop": "Stop",
+    "play": "Play",
+    "pause": "Pause",
+    "rewind": "Rewind",
+    "fast_forward": "Fast forward",
+    "source": "Source",
+    "watch_tv": "Watch TV",
+    "confirm": "Confirm",
+    "previous": "Previous",
+    "next": "Next",
+    "cursor_left": "D-pad left",
+    "cursor_up": "D-pad up",
+    "cursor_right": "D-pad right",
+    "cursor_down": "D-pad down",
+    "options": "Options",
+    "back": "Back",
+    "home": "Home"
   }
 }

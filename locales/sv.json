@@ -1,0 +1,39 @@
+{
+  "pair": {
+    "add_by_ip": {
+      "title": "Lägg till manuellt",
+      "ip": "IP-adress",
+      "no_new_devices_hint": "Alla hittade TV-apparater är redan tillagda. Försök att lägga till din TV manuellt.",
+      "need_help_pairing": "Behöver du hjälp med parning?",
+      "click_here_documentation": "Klicka här för att visa dokumentationen."
+    },
+    "add_device": {
+      "title": "Lägg till enhet"
+    }
+  },
+  "error": {
+    "generic": "Ett oväntat fel inträffade",
+    "unpaired": "Enheten är inte ihopparad och behöver ihopparas igen",
+    "device_not_found": "Enheten hittades inte",
+    "something_went_wrong": "Något gick fel"
+  },
+  "key": {
+    "stop": "Stoppa",
+    "play": "Spela",
+    "pause": "Pausa",
+    "rewind": "Spola bakåt",
+    "fast_forward": "Spola framåt",
+    "source": "Källa",
+    "watch_tv": "Titta på TV",
+    "confirm": "Bekräfta",
+    "previous": "Föregående",
+    "next": "Nästa",
+    "cursor_left": "D-pad vänster",
+    "cursor_up": "D-pad upp",
+    "cursor_right": "D-pad höger",
+    "cursor_down": "D-pad ner",
+    "options": "Alternativ",
+    "back": "Tillbaka",
+    "home": "Hem"
+  }
+}

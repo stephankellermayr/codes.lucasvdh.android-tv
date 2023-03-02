@@ -1,7 +1,10 @@
 import {Remote} from "../../remote";
 import {DeviceData, DeviceSettings, SettingsInput} from "./types";
-import AndroidTVRemoteClient, {Volume, Input} from "./client";
+import AndroidTVRemoteClient, {Input, Volume} from "./client";
 
+/**
+ * @property {RemoteDriver} driver
+ */
 class RemoteDevice extends Remote {
     private client?: AndroidTVRemoteClient;
     private keyCapabilities: Array<string> = [
@@ -86,17 +89,17 @@ class RemoteDevice extends Remote {
             this.log('volume', volume);
             this.log("Volume : " + volume.level + '/' + volume.maximum + " | Muted : " + volume.muted);
 
+            // await this.setCapabilityValue('volume_mute', volume.muted);
+            // await this.setCapabilityValue('volume', volume.level);
             await this.setCapabilityValue('volume_mute', volume.muted);
-            await this.setCapabilityValue('volume', volume.level);
-            await this.setCapabilityOptions('volume', {
-                min: 0,
-                max: volume.maximum,
-                step: 1.0
-            })
+            await this.setCapabilityValue('measure_volume', Math.round(volume.level / (volume.maximum / 100)));
         });
 
         this.client.on('current_app', (current_app) => {
-            // this.setCapabilityValue('current_application', current_app);
+            // @ts-ignore
+            return this.driver.triggerApplicationOpenedTrigger(this, {
+                app: current_app
+            }).catch(this.error)
         });
 
         this.client.on('unpaired', async () => {
@@ -107,7 +110,8 @@ class RemoteDevice extends Remote {
             await this.setUnavailable(this.homey.__('error.unpaired'));
         });
 
-        this.client.on('error', async () => {
+        this.client.on('error', async (error) => {
+            this.log('client.on(error)', error);
             // TODO: is this necessary?
             await this.reloadClient(60);
         });
@@ -120,6 +124,18 @@ class RemoteDevice extends Remote {
 
         this.registerCapabilityListener('onoff', value => {
             return this.onCapabilityOnOffSet(value)
+        })
+
+        this.registerCapabilityListener('volume_up', value => {
+            return this.client?.volumeUp();
+        })
+
+        this.registerCapabilityListener('volume_down', value => {
+            return this.client?.volumeDown();
+        })
+
+        this.registerCapabilityListener('volume_mute', value => {
+            return this.client?.mute();
         })
 
         // this.registerCapabilityListener('key', value => {
@@ -224,10 +240,14 @@ class RemoteDevice extends Remote {
         // }
     }
 
-    fixCapabilities () {
+    fixCapabilities() {
+        let oldCapabilities = [
+            'volume'
+        ];
+
         let newCapabilities = [
             "onoff",
-            "volume",
+            "measure_volume",
             "volume_up",
             "volume_down",
             "volume_mute",
@@ -246,12 +266,27 @@ class RemoteDevice extends Remote {
             "key_watch_tv"
         ]
 
+        for (let i in oldCapabilities) {
+            let oldCapability = oldCapabilities[i]
+
+            if (this.hasCapability(oldCapability)) {
+                this.log('Removing old capability: ' + oldCapability)
+                this.removeCapability(oldCapability)
+                    .catch(error => {
+                        this.log(error);
+                    })
+            }
+        }
+
         for (let i in newCapabilities) {
             let newCapability = newCapabilities[i]
 
             if (!this.hasCapability(newCapability)) {
-                this.log('Fixed capability: ' + newCapability)
+                this.log('Adding new capability: ' + newCapability)
                 this.addCapability(newCapability)
+                    .catch(error => {
+                        this.log(error);
+                    })
             }
         }
     }
@@ -282,7 +317,45 @@ class RemoteDevice extends Remote {
         }
     }
 
-    public async openApplication(app: { url: string}): Promise<void> {
+    public async sendKey(key: string): Promise<void> {
+        if (key === 'key_stop') {
+            this.client?.sendKeyMediaStop();
+        } else if (key === 'key_play') {
+            this.client?.sendKeyMediaPlay();
+        } else if (key === 'key_pause') {
+            this.client?.sendKeyMediaPause();
+        } else if (key === 'key_rewind') {
+            this.client?.sendKeyMediaRewind();
+        } else if (key === 'key_fast_forward') {
+            this.client?.sendKeyMediaFastForward();
+        } else if (key === 'key_source') {
+            this.client?.sendKeySource();
+        } else if (key === 'key_watch_tv') {
+            this.client?.sendKeyTv();
+        } else if (key === 'key_confirm') {
+            this.client?.sendKeyDpadCenter();
+        } else if (key === 'key_previous') {
+            this.client?.sendKeyMediaStop();
+        } else if (key === 'key_next') {
+            this.client?.sendKeyMediaNext();
+        } else if (key === 'key_cursor_left') {
+            this.client?.sendKeyDpadLeft();
+        } else if (key === 'key_cursor_up') {
+            this.client?.sendKeyDpadUp();
+        } else if (key === 'key_cursor_right') {
+            this.client?.sendKeyDpadRight();
+        } else if (key === 'key_cursor_down') {
+            this.client?.sendKeyDpadDown();
+        } else if (key === 'key_options') {
+            this.client?.sendKeyMenu();
+        } else if (key === 'key_back') {
+            this.client?.sendKeyBack();
+        } else if (key === 'key_home') {
+            this.client?.sendKeyHome();
+        }
+    }
+
+    public async openApplication(app: { url: string }): Promise<void> {
         this.client?.openApplication(app.url);
     }
 
@@ -308,6 +381,79 @@ class RemoteDevice extends Remote {
         } else {
             throw new Error(`Unknown source: ${source}`)
         }
+    }
+
+    public async getKeys(): Promise<Array<{ key: string, name: string }>> {
+        return [
+            {
+                key: 'key_stop',
+                name: this.homey.__(`key.stop`)
+            },
+            {
+                key: 'key_play',
+                name: this.homey.__(`key.play`)
+            },
+            {
+                key: 'key_pause',
+                name: this.homey.__(`key.pause`)
+            },
+            {
+                key: 'key_rewind',
+                name: this.homey.__(`key.rewind`)
+            },
+            {
+                key: 'key_fast_forward',
+                name: this.homey.__(`key.fast_forward`)
+            },
+            {
+                key: 'key_source',
+                name: this.homey.__(`key.source`)
+            },
+            {
+                key: 'key_watch_tv',
+                name: this.homey.__(`key.watch_tv`)
+            },
+            {
+                key: 'key_confirm',
+                name: this.homey.__(`key.confirm`)
+            },
+            {
+                key: 'key_previous',
+                name: this.homey.__(`key.previous`)
+            },
+            {
+                key: 'key_next',
+                name: this.homey.__(`key.next`)
+            },
+            {
+                key: 'key_cursor_left',
+                name: this.homey.__(`key.cursor_left`)
+            },
+            {
+                key: 'key_cursor_up',
+                name: this.homey.__(`key.cursor_up`)
+            },
+            {
+                key: 'key_cursor_right',
+                name: this.homey.__(`key.cursor_right`)
+            },
+            {
+                key: 'key_cursor_down',
+                name: this.homey.__(`key.cursor_down`)
+            },
+            {
+                key: 'key_options',
+                name: this.homey.__(`key.options`)
+            },
+            {
+                key: 'key_back',
+                name: this.homey.__(`key.back`)
+            },
+            {
+                key: 'key_home',
+                name: this.homey.__(`key.home`)
+            },
+        ];
     }
 }
 

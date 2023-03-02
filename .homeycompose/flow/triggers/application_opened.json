@@ -35,7 +35,7 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=philips-jointspace"
+      "filter": "driver_id=remote"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Volume",
+    "nl": "Volume"
+  },
+  "icon": "/assets/capabilities/measure_volume.svg",
+  "uiComponent": "sensor",
+  "getable": true,
+  "setable": false,
+  "units": {
+    "en": "%"
+  },
+  "decimals": 0,
+  "min": 0,
+  "max": 100,
+  "step": 1.0
+}

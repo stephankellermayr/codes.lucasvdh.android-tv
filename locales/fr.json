@@ -1,0 +1,39 @@
+{
+  "pair": {
+    "add_by_ip": {
+      "title": "Ajouter manuellement",
+      "ip": "Adresse IP",
+      "no_new_devices_hint": "Toutes les télévisions trouvées sont déjà ajoutées. Essayez d'ajouter votre télévision manuellement.",
+      "need_help_pairing": "Besoin d'aide pour le couplage?",
+      "click_here_documentation": "Cliquez ici pour voir la documentation."
+    },
+    "add_device": {
+      "title": "Ajouter un appareil"
+    }
+  },
+  "error": {
+    "generic": "Une erreur inattendue s'est produite",
+    "unpaired": "L'appareil a été désapparié et doit être réapparié",
+    "device_not_found": "Appareil non trouvé",
+    "something_went_wrong": "Quelque chose s'est mal passé"
+  },
+  "key": {
+    "stop": "Arrêter",
+    "play": "Lire",
+    "pause": "Pause",
+    "rewind": "Rembobiner",
+    "fast_forward": "Avance rapide",
+    "source": "Source",
+    "watch_tv": "Regarder la télévision",
+    "confirm": "Confirmer",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "cursor_left": "Flèche gauche",
+    "cursor_up": "Flèche haut",
+    "cursor_right": "Flèche droite",
+    "cursor_down": "Flèche bas",
+    "options": "Options",
+    "back": "Retour",
+    "home": "Accueil"
+  }
+}

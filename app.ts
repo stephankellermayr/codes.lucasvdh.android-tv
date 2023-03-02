@@ -26,6 +26,10 @@ class AndroidTV extends Homey.App {
         this.homey.flow.getActionCard('select_source')
             .registerRunListener(this.onFlowActionSelectSource)
 
+        this.homey.flow.getActionCard('send_key')
+            .registerRunListener(this.onFlowActionSendKey)
+            .registerArgumentAutocompleteListener('option', this.onFlowKeyAutocomplete.bind(this))
+
         // this.homey.flow.getActionCard('send_key')
         //     .registerRunListener(this.onFlowActionSendKey)
         //     .registerArgumentAutocompleteListener('option', this.onFlowKeyAutocomplete.bind(this))
@@ -44,6 +48,23 @@ class AndroidTV extends Homey.App {
 
     async onFlowActionOpenApplication({device, app}: { device: RemoteDevice, app: { url: string, name: string } }) {
         return device.openApplication(app)
+    }
+
+    async onFlowActionSendKey({device, option}: { device: RemoteDevice, option: { key: string } }) {
+        return device.sendKey(option.key)
+    }
+
+    async onFlowKeyAutocomplete(query: string, {device}: { device: RemoteDevice }): Promise<FlowCard.ArgumentAutocompleteResults> {
+        return (await device.getKeys())
+            .map(key => {
+                return {
+                    'id': key.key,
+                    'key': key.key,
+                    'name': key.name
+                }
+            }).filter(result => {
+                return result.name.toLowerCase().indexOf(query.toLowerCase()) > -1
+            })
     }
 
     async onFlowApplicationAutocomplete(query: string, {device}: { device: RemoteDevice }): Promise<FlowCard.ArgumentAutocompleteResults> {

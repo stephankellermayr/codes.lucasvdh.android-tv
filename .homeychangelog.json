@@ -34,5 +34,17 @@
     "es": "Corregir el enlace incorrecto a la documentación de emparejamiento",
     "da": "Fix forkert link til paringsdokumentation",
     "pl": "Napraw nieprawidłowe połączenie do dokumentacji parowania"
+  },
+  "0.3.0": {
+    "en": "Fix for volume buttons, more translations and added initial \"application opened\" flow card trigger",
+    "nl": "Fix voor volume knoppen, meer vertalingen en eerste versie van flow kaart \"applicatie geopend\" toegevoegd",
+    "de": "Fix für Lautstärketasten, mehr Übersetzungen und Auslöser für die initiale \"Anwendung geöffnet\"-Flow-Karte hinzugefügt",
+    "fr": "Correction pour les boutons de volume, plus de traductions et ajout de la gâchette initiale de la carte de flux \"application ouverte\"",
+    "it": "Correzione per i pulsanti del volume, più traduzioni e aggiunta del trigger della carta di flusso \"applicazione aperta\" iniziale",
+    "sv": "Fix för volymknappar, fler översättningar och tillagd initial \"applikation öppnad\"-flödeskortsutlösare",
+    "no": "Fikset for volumknapper, flere oversettelser og lagt til utløser for den initielle \"applikasjonsåpnet\"-flytkortet",
+    "es": "Corrección para los botones de volumen, más traducciones y añadido el desencadenante de la tarjeta de flujo inicial \"aplicación abierta\"",
+    "da": "Fix til volumenknapper, flere oversættelser og tilføjet initial \"applikation åbnet\" flow-kort udløser",
+    "pl": "Poprawka dla przycisków głośności, więcej tłumaczeń i dodano początkowy wyzwalacz karty przepływu \"otwarta aplikacja\""
   }
 }

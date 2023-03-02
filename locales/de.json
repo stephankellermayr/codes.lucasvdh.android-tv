@@ -1,0 +1,39 @@
+{
+  "pair": {
+    "add_by_ip": {
+      "title": "Manuell hinzufügen",
+      "ip": "IP-Adresse",
+      "no_new_devices_hint": "Alle gefundenen Fernseher wurden bereits hinzugefügt. Versuchen Sie, Ihren Fernseher manuell hinzuzufügen.",
+      "need_help_pairing": "Brauchen Sie Hilfe bei der Kopplung?",
+      "click_here_documentation": "Klicken Sie hier, um die Dokumentation anzuzeigen."
+    },
+    "add_device": {
+      "title": "Gerät hinzufügen"
+    }
+  },
+  "error": {
+    "generic": "Ein unerwarteter Fehler ist aufgetreten",
+    "unpaired": "Das Gerät wurde entkoppelt und muss erneut gekoppelt werden",
+    "device_not_found": "Gerät nicht gefunden",
+    "something_went_wrong": "Etwas ist schiefgelaufen"
+  },
+  "key": {
+    "stop": "Stoppen",
+    "play": "Abspielen",
+    "pause": "Pause",
+    "rewind": "Zurückspulen",
+    "fast_forward": "Vorspulen",
+    "source": "Quelle",
+    "watch_tv": "Fernsehen",
+    "confirm": "Bestätigen",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "cursor_left": "D-Pad links",
+    "cursor_up": "D-Pad hoch",
+    "cursor_right": "D-Pad rechts",
+    "cursor_down": "D-Pad runter",
+    "options": "Optionen",
+    "back": "Zurück",
+    "home": "Home"
+  }
+}

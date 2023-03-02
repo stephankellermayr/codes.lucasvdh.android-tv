@@ -1,0 +1,39 @@
+{
+  "pair": {
+    "add_by_ip": {
+      "title": "Tilføj manuelt",
+      "ip": "IP-adresse",
+      "no_new_devices_hint": "Alle fundne TV'er er allerede tilføjet. Prøv at tilføje dit TV manuelt.",
+      "need_help_pairing": "Har du brug for hjælp til paring?",
+      "click_here_documentation": "Klik her for at se dokumentationen."
+    },
+    "add_device": {
+      "title": "Tilføj enhed"
+    }
+  },
+  "error": {
+    "generic": "Der opstod en uventet fejl",
+    "unpaired": "Enheden blev ikke parret og skal parres igen",
+    "device_not_found": "Enhed ikke fundet",
+    "something_went_wrong": "Noget gik galt"
+  },
+  "key": {
+    "stop": "Stop",
+    "play": "Afspil",
+    "pause": "Pause",
+    "rewind": "Spol tilbage",
+    "fast_forward": "Spol fremad",
+    "source": "Kilde",
+    "watch_tv": "Se TV",
+    "confirm": "Bekræft",
+    "previous": "Forrige",
+    "next": "Næste",
+    "cursor_left": "Venstre pil",
+    "cursor_up": "Opad pil",
+    "cursor_right": "Højre pil",
+    "cursor_down": "Nedad pil",
+    "options": "Indstillinger",
+    "back": "Tilbage",
+    "home": "Hjem"
+  }
+}

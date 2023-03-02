@@ -1,6 +1,15 @@
 {
   "name": {
-    "en": "Remote"
+    "en": "Remote",
+    "nl": "Afstandsbediening",
+    "de": "Fernbedienung",
+    "fr": "Télécommande",
+    "it": "Telecomando",
+    "sv": "Fjärrkontroll",
+    "no": "Fjernkontroll",
+    "es": "Control remoto",
+    "da": "Fjernbetjening",
+    "pl": "Pilot zdalnego sterowania"
   },
   "pair": [
     {
@@ -87,7 +96,7 @@
   "discovery": "googlecast",
   "capabilities": [
     "onoff",
-    "volume",
+    "measure_volume",
     "volume_up",
     "volume_down",
     "volume_mute",
