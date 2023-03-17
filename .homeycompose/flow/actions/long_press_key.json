@@ -1,0 +1,59 @@
+{
+  "id": "long_press_key",
+  "title": {
+    "en": "Long press a key",
+    "nl": "Druk lang op een toets",
+    "de": "Lange Taste drücken",
+    "fr": "Appuyer longuement sur une touche",
+    "it": "Premi a lungo un tasto",
+    "sv": "Tryck länge på en knapp",
+    "no": "Trykk og hold inne en tast",
+    "es": "Mantener pulsada una tecla",
+    "da": "Tryk længe på en tast",
+    "pl": "Przytrzymaj klawisz"
+  },
+  "titleFormatted": {
+    "en": "Press [[option]] key for [[seconds]] seconds",
+    "nl": "Druk [[seconds]] seconden de [[option]] toets in",
+    "de": "Drücke die [[option]]-Taste für [[seconds]] Sekunden",
+    "fr": "Appuyer sur la touche [[option]] pendant [[seconds]] secondes",
+    "it": "Premi il tasto [[option]] per [[seconds]] secondi",
+    "sv": "Tryck på [[option]]-knappen i [[seconds]] sekunder",
+    "no": "Trykk [[option]]-tasten i [[seconds]] sekunder",
+    "es": "Pulsa la tecla [[option]] durante [[seconds]] segundos",
+    "da": "Tryk på [[option]]-tasten i [[seconds]] sekunder",
+    "pl": "Przytrzymaj klawisz [[option]] przez [[seconds]] sekund"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=remote"
+    },
+    {
+      "name": "option",
+      "type": "autocomplete"
+    },
+    {
+      "name": "seconds",
+      "type": "number",
+      "title": {
+        "en": "seconds",
+        "nl": "seconden",
+        "de": "Sekunden",
+        "fr": "secondes",
+        "it": "secondi",
+        "sv": "sekunder",
+        "no": "sekunder",
+        "es": "segundos",
+        "da": "sekunder",
+        "pl": "sekundy"
+      },
+      "placeholder": {
+        "en": "1.5"
+      },
+      "min": 0.1,
+      "step": 0.1
+    }
+  ]
+}

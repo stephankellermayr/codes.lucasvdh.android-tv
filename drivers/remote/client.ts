@@ -80,16 +80,16 @@ export default class AndroidTVRemoteClient {
         this.client.sendKey(RemoteKeyCode.KEYCODE_MUTE, RemoteDirection.SHORT)
     }
 
-    public volumeUp(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_VOLUME_UP, RemoteDirection.SHORT)
+    public volumeUp(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_VOLUME_UP, direction || RemoteDirection.SHORT)
     }
 
-    public volumeDown(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_VOLUME_DOWN, RemoteDirection.SHORT)
+    public volumeDown(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_VOLUME_DOWN, direction || RemoteDirection.SHORT)
     }
 
-    public sendKeySelect(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_BUTTON_SELECT, RemoteDirection.SHORT)
+    public sendKeySelect(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_BUTTON_SELECT, direction || RemoteDirection.SHORT)
     }
 
     public setInput(input: Input): void {
@@ -125,56 +125,56 @@ export default class AndroidTVRemoteClient {
         }
     }
 
-    public sendKeyTv(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_TV, RemoteDirection.SHORT)
+    public sendKeyTv(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_TV, direction || RemoteDirection.SHORT)
     }
-    public sendKeySource(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_TV_INPUT, RemoteDirection.SHORT)
+    public sendKeySource(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_TV_INPUT, direction || RemoteDirection.SHORT)
     }
-    public sendKeyMediaPlay(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_PLAY, RemoteDirection.SHORT)
+    public sendKeyMediaPlay(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_PLAY, direction || RemoteDirection.SHORT)
     }
-    public sendKeyMediaPause(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_PAUSE, RemoteDirection.SHORT)
+    public sendKeyMediaPause(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_PAUSE, direction || RemoteDirection.SHORT)
     }
-    public sendKeyMediaStop(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_STOP, RemoteDirection.SHORT)
+    public sendKeyMediaStop(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_STOP, direction || RemoteDirection.SHORT)
     }
-    public sendKeyMediaNext(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_NEXT, RemoteDirection.SHORT)
+    public sendKeyMediaNext(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_NEXT, direction || RemoteDirection.SHORT)
     }
-    public sendKeyMediaPrevious(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_PREVIOUS, RemoteDirection.SHORT)
+    public sendKeyMediaPrevious(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_PREVIOUS, direction || RemoteDirection.SHORT)
     }
-    public sendKeyMediaRewind(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_REWIND, RemoteDirection.SHORT)
+    public sendKeyMediaRewind(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_REWIND, direction || RemoteDirection.SHORT)
     }
-    public sendKeyMediaFastForward(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_FAST_FORWARD, RemoteDirection.SHORT)
+    public sendKeyMediaFastForward(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_FAST_FORWARD, direction || RemoteDirection.SHORT)
     }
-    public sendKeyDpadUp(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_UP, RemoteDirection.SHORT)
+    public sendKeyDpadUp(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_UP, direction || RemoteDirection.SHORT)
     }
-    public sendKeyDpadDown(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_DOWN, RemoteDirection.SHORT)
+    public sendKeyDpadDown(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_DOWN, direction || RemoteDirection.SHORT)
     }
-    public sendKeyDpadLeft(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_LEFT, RemoteDirection.SHORT)
+    public sendKeyDpadLeft(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_LEFT, direction || RemoteDirection.SHORT)
     }
-    public sendKeyDpadRight(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_RIGHT, RemoteDirection.SHORT)
+    public sendKeyDpadRight(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_RIGHT, direction || RemoteDirection.SHORT)
     }
-    public sendKeyDpadCenter(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_CENTER, RemoteDirection.SHORT)
+    public sendKeyDpadCenter(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_DPAD_CENTER, direction || RemoteDirection.SHORT)
     }
-    public sendKeyHome(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_HOME, RemoteDirection.SHORT)
+    public sendKeyHome(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_HOME, direction || RemoteDirection.SHORT)
     }
-    public sendKeyBack(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_BACK, RemoteDirection.SHORT)
+    public sendKeyBack(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_BACK, direction || RemoteDirection.SHORT)
     }
-    public sendKeyMenu(): void {
-        this.client.sendKey(RemoteKeyCode.KEYCODE_MENU, RemoteDirection.SHORT)
+    public sendKeyMenu(direction: number | null = null): void {
+        this.client.sendKey(RemoteKeyCode.KEYCODE_MENU, direction || RemoteDirection.SHORT)
     }
 
     public openApplication(application: string): void {

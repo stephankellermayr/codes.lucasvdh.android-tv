@@ -317,46 +317,46 @@ class RemoteDevice extends Remote {
         }
     }
 
-    public async sendKey(key: string): Promise<void> {
+    public async pressKey(key: string, direction: number | null = null): Promise<void> {
         if (key === 'key_stop') {
-            this.client?.sendKeyMediaStop();
+            this.client?.sendKeyMediaStop(direction);
         } else if (key === 'key_play') {
-            this.client?.sendKeyMediaPlay();
+            this.client?.sendKeyMediaPlay(direction);
         } else if (key === 'key_pause') {
-            this.client?.sendKeyMediaPause();
+            this.client?.sendKeyMediaPause(direction);
         } else if (key === 'key_rewind') {
-            this.client?.sendKeyMediaRewind();
+            this.client?.sendKeyMediaRewind(direction);
         } else if (key === 'key_fast_forward') {
-            this.client?.sendKeyMediaFastForward();
+            this.client?.sendKeyMediaFastForward(direction);
         } else if (key === 'key_source') {
-            this.client?.sendKeySource();
+            this.client?.sendKeySource(direction);
         } else if (key === 'key_watch_tv') {
-            this.client?.sendKeyTv();
+            this.client?.sendKeyTv(direction);
         } else if (key === 'key_confirm') {
-            this.client?.sendKeyDpadCenter();
+            this.client?.sendKeyDpadCenter(direction);
         } else if (key === 'key_previous') {
-            this.client?.sendKeyMediaStop();
+            this.client?.sendKeyMediaStop(direction);
         } else if (key === 'key_next') {
-            this.client?.sendKeyMediaNext();
+            this.client?.sendKeyMediaNext(direction);
         } else if (key === 'key_cursor_left') {
-            this.client?.sendKeyDpadLeft();
+            this.client?.sendKeyDpadLeft(direction);
         } else if (key === 'key_cursor_up') {
-            this.client?.sendKeyDpadUp();
+            this.client?.sendKeyDpadUp(direction);
         } else if (key === 'key_cursor_right') {
-            this.client?.sendKeyDpadRight();
+            this.client?.sendKeyDpadRight(direction);
         } else if (key === 'key_cursor_down') {
-            this.client?.sendKeyDpadDown();
+            this.client?.sendKeyDpadDown(direction);
         } else if (key === 'key_options') {
-            this.client?.sendKeyMenu();
+            this.client?.sendKeyMenu(direction);
         } else if (key === 'key_back') {
-            this.client?.sendKeyBack();
+            this.client?.sendKeyBack(direction);
         } else if (key === 'key_home') {
-            this.client?.sendKeyHome();
+            this.client?.sendKeyHome(direction);
         }
     }
 
-    public async openApplication(app: { url: string }): Promise<void> {
-        this.client?.openApplication(app.url);
+    public async openApplication(appLink: string): Promise<void> {
+        this.client?.openApplication(appLink);
     }
 
     public async selectSource(source: string): Promise<void> {

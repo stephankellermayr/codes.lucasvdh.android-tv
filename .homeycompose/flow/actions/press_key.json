@@ -1,0 +1,38 @@
+{
+  "id": "press_key",
+  "title": {
+    "en": "Press a key",
+    "nl": "Druk op een knop",
+    "de": "Drücken Sie eine Taste",
+    "fr": "Appuyez sur une touche",
+    "it": "Premi un tasto",
+    "sv": "Tryck på en knapp",
+    "no": "Trykk på en tast",
+    "es": "Presione una tecla",
+    "da": "Tryk på en tast",
+    "pl": "Naciśnij klawisz"
+  },
+  "titleFormatted": {
+    "en": "Press key [[option]]",
+    "nl": "Druk op toets [[option]]",
+    "de": "Drücken Sie die Taste [[option]]",
+    "fr": "Appuyez sur la touche [[option]]",
+    "it": "Premi il tasto [[option]]",
+    "sv": "Tryck på knappen [[option]]",
+    "no": "Trykk på tasten [[option]]",
+    "es": "Presione la tecla [[option]]",
+    "da": "Tryk på tasten [[option]]",
+    "pl": "Naciśnij klawisz [[option]]"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=remote"
+    },
+    {
+      "name": "option",
+      "type": "autocomplete"
+    }
+  ]
+}

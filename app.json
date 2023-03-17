@@ -152,6 +152,65 @@
     ],
     "actions": [
       {
+        "id": "long_press_key",
+        "title": {
+          "en": "Long press a key",
+          "nl": "Druk lang op een toets",
+          "de": "Lange Taste drücken",
+          "fr": "Appuyer longuement sur une touche",
+          "it": "Premi a lungo un tasto",
+          "sv": "Tryck länge på en knapp",
+          "no": "Trykk og hold inne en tast",
+          "es": "Mantener pulsada una tecla",
+          "da": "Tryk længe på en tast",
+          "pl": "Przytrzymaj klawisz"
+        },
+        "titleFormatted": {
+          "en": "Press [[option]] key for [[seconds]] seconds",
+          "nl": "Druk [[seconds]] seconden de [[option]] toets in",
+          "de": "Drücke die [[option]]-Taste für [[seconds]] Sekunden",
+          "fr": "Appuyer sur la touche [[option]] pendant [[seconds]] secondes",
+          "it": "Premi il tasto [[option]] per [[seconds]] secondi",
+          "sv": "Tryck på [[option]]-knappen i [[seconds]] sekunder",
+          "no": "Trykk [[option]]-tasten i [[seconds]] sekunder",
+          "es": "Pulsa la tecla [[option]] durante [[seconds]] segundos",
+          "da": "Tryk på [[option]]-tasten i [[seconds]] sekunder",
+          "pl": "Przytrzymaj klawisz [[option]] przez [[seconds]] sekund"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=remote"
+          },
+          {
+            "name": "option",
+            "type": "autocomplete"
+          },
+          {
+            "name": "seconds",
+            "type": "number",
+            "title": {
+              "en": "seconds",
+              "nl": "seconden",
+              "de": "Sekunden",
+              "fr": "secondes",
+              "it": "secondi",
+              "sv": "sekunder",
+              "no": "sekunder",
+              "es": "segundos",
+              "da": "sekunder",
+              "pl": "sekundy"
+            },
+            "placeholder": {
+              "en": "1.5"
+            },
+            "min": 0.1,
+            "step": 0.1
+          }
+        ]
+      },
+      {
         "highlight": true,
         "id": "open_application",
         "title": {
@@ -167,25 +226,93 @@
           "pl": "Otwórz aplikację"
         },
         "titleFormatted": {
-          "en": "Open app [[app]]",
-          "nl": "Open app [[app]]",
-          "de": "Öffne App [[app]]",
-          "fr": "Ouvrir l'application [[app]]",
-          "it": "Apri app [[app]]",
-          "sv": "Öppna app [[app]]",
-          "no": "Åpne app [[app]]",
-          "es": "Abrir aplicación [[app]]",
-          "da": "Åben app [[app]]",
-          "pl": "Otwórz aplikację [[app]]"
+          "en": "Open app [[app_name]][[app_link]]",
+          "nl": "Open app [[app_name]][[app_link]]",
+          "de": "Öffne App [[app_name]][[app_link]]",
+          "fr": "Ouvrir l'application [[app_name]][[app_link]]",
+          "it": "Apri app [[app_name]][[app_link]]",
+          "sv": "Öppna app [[app_name]][[app_link]]",
+          "no": "Åpne app [[app_name]][[app_link]]",
+          "es": "Abrir aplicación [[app_name]][[app_link]]",
+          "da": "Åben app [[app_name]][[app_link]]",
+          "pl": "Otwórz aplikację [[app_name]][[app_link]]"
         },
         "args": [
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=philips-jointspace"
+            "filter": "driver_id=remote"
           },
           {
-            "name": "app",
+            "name": "app_name",
+            "title": {
+              "en": "app name",
+              "nl": "app naam",
+              "de": "App-Name",
+              "fr": "Nom de l'application",
+              "it": "Nome dell'applicazione",
+              "sv": "App-namn",
+              "no": "Appnavn",
+              "es": "Nombre de la aplicación",
+              "da": "App-navn",
+              "pl": "Nazwa aplikacji"
+            },
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "app_link",
+            "title": {
+              "en": "app link",
+              "nl": "app link",
+              "de": "App-Link",
+              "fr": "Lien de l'application",
+              "it": "Link dell'applicazione",
+              "sv": "App-länk",
+              "no": "Applink",
+              "es": "Enlace de la aplicación",
+              "da": "App-link",
+              "pl": "Link do aplikacji"
+            },
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "press_key",
+        "title": {
+          "en": "Press a key",
+          "nl": "Druk op een knop",
+          "de": "Drücken Sie eine Taste",
+          "fr": "Appuyez sur une touche",
+          "it": "Premi un tasto",
+          "sv": "Tryck på en knapp",
+          "no": "Trykk på en tast",
+          "es": "Presione una tecla",
+          "da": "Tryk på en tast",
+          "pl": "Naciśnij klawisz"
+        },
+        "titleFormatted": {
+          "en": "Press key [[option]]",
+          "nl": "Druk op toets [[option]]",
+          "de": "Drücken Sie die Taste [[option]]",
+          "fr": "Appuyez sur la touche [[option]]",
+          "it": "Premi il tasto [[option]]",
+          "sv": "Tryck på knappen [[option]]",
+          "no": "Trykk på tasten [[option]]",
+          "es": "Presione la tecla [[option]]",
+          "da": "Tryk på tasten [[option]]",
+          "pl": "Naciśnij klawisz [[option]]"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=remote"
+          },
+          {
+            "name": "option",
             "type": "autocomplete"
           }
         ]
@@ -281,44 +408,6 @@
                 }
               }
             ]
-          }
-        ]
-      },
-      {
-        "id": "send_key",
-        "title": {
-          "en": "Send a key",
-          "nl": "Stuur een knop",
-          "de": "Sende eine Taste",
-          "fr": "Envoyer une touche",
-          "it": "Invia un tasto",
-          "sv": "Skicka en tangent",
-          "no": "Send en tast",
-          "es": "Enviar una tecla",
-          "da": "Send en tast",
-          "pl": "Wyślij klawisz"
-        },
-        "titleFormatted": {
-          "en": "Send key [[option]]",
-          "nl": "Stuur knop [[option]]",
-          "de": "Sende Taste [[option]]",
-          "fr": "Envoyer la touche [[option]]",
-          "it": "Invia tasto [[option]]",
-          "sv": "Skicka tangent [[option]]",
-          "no": "Send tast [[option]]",
-          "es": "Enviar tecla [[option]]",
-          "da": "Send tast [[option]]",
-          "pl": "Wyślij klawisz [[option]]"
-        },
-        "args": [
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=remote"
-          },
-          {
-            "name": "option",
-            "type": "autocomplete"
           }
         ]
       }

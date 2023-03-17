@@ -14,26 +14,56 @@
     "pl": "Otwórz aplikację"
   },
   "titleFormatted": {
-    "en": "Open app [[app]]",
-    "nl": "Open app [[app]]",
-    "de": "Öffne App [[app]]",
-    "fr": "Ouvrir l'application [[app]]",
-    "it": "Apri app [[app]]",
-    "sv": "Öppna app [[app]]",
-    "no": "Åpne app [[app]]",
-    "es": "Abrir aplicación [[app]]",
-    "da": "Åben app [[app]]",
-    "pl": "Otwórz aplikację [[app]]"
+    "en": "Open app [[app_name]][[app_link]]",
+    "nl": "Open app [[app_name]][[app_link]]",
+    "de": "Öffne App [[app_name]][[app_link]]",
+    "fr": "Ouvrir l'application [[app_name]][[app_link]]",
+    "it": "Apri app [[app_name]][[app_link]]",
+    "sv": "Öppna app [[app_name]][[app_link]]",
+    "no": "Åpne app [[app_name]][[app_link]]",
+    "es": "Abrir aplicación [[app_name]][[app_link]]",
+    "da": "Åben app [[app_name]][[app_link]]",
+    "pl": "Otwórz aplikację [[app_name]][[app_link]]"
   },
   "args": [
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=philips-jointspace"
+      "filter": "driver_id=remote"
     },
     {
-      "name": "app",
-      "type": "autocomplete"
+      "name": "app_name",
+      "title": {
+        "en": "app name",
+        "nl": "app naam",
+        "de": "App-Name",
+        "fr": "Nom de l'application",
+        "it": "Nome dell'applicazione",
+        "sv": "App-namn",
+        "no": "Appnavn",
+        "es": "Nombre de la aplicación",
+        "da": "App-navn",
+        "pl": "Nazwa aplikacji"
+      },
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "app_link",
+      "title": {
+        "en": "app link",
+        "nl": "app link",
+        "de": "App-Link",
+        "fr": "Lien de l'application",
+        "it": "Link dell'applicazione",
+        "sv": "App-länk",
+        "no": "Applink",
+        "es": "Enlace de la aplicación",
+        "da": "App-link",
+        "pl": "Link do aplikacji"
+      },
+      "type": "text",
+      "required": false
     }
   ]
 }
