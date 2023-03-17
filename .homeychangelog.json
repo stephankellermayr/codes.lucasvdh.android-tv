@@ -46,5 +46,17 @@
     "es": "Corrección para los botones de volumen, más traducciones y añadido el desencadenante de la tarjeta de flujo inicial \"aplicación abierta\"",
     "da": "Fix til volumenknapper, flere oversættelser og tilføjet initial \"applikation åbnet\" flow-kort udløser",
     "pl": "Poprawka dla przycisków głośności, więcej tłumaczeń i dodano początkowy wyzwalacz karty przepływu \"otwarta aplikacja\""
+  },
+  "0.4.0": {
+    "en": "Add an action for a long press on a button, rename the \"send key\" action to \"press a button\" and the first version of the \"open an application\" action",
+    "nl": "Voeg een actie toe voor het lang indrukken van een knop, hernoem de \"stuur knop\" actie naar \"druk een knop in\" en de eerste versie van de \"open een applicatie\" actie",
+    "de": "Fügen Sie eine Aktion für einen langen Tastendruck auf einer Schaltfläche hinzu, benennen Sie die Aktion \"Sendetaste\" in \"Taste drücken\" und die erste Version der Aktion \"Öffnen einer Anwendung\" um",
+    "fr": "Ajoutez une action pour un appui long sur un bouton, renommez l'action \"envoyer une touche\" en \"appuyer sur un bouton\" et la première version de l'action \"ouvrir une application\"",
+    "it": "Aggiungi un'azione per una pressione prolungata su un pulsante, rinomina l'azione \"tasto di invio\" in \"premere un pulsante\" e la prima versione dell'azione \"apri un'applicazione\"",
+    "sv": "Lägg till en åtgärd för en lång tryckning på en knapp, byt namn på åtgärden \"skicka nyckel\" till \"tryck på en knapp\" och den första versionen av åtgärden \"öppna en applikation\"",
+    "no": "Legg til en handling for et langt trykk på en knapp, gi navnet \"send knapp\" handlingen til \"trykk på en knapp\" og den første versjonen av handlingen \"åpne en applikasjon\"",
+    "es": "Agregar una acción para una pulsación larga en un botón, renombrar la acción \"enviar tecla\" como \"presionar un botón\" y la primera versión de la acción \"abrir una aplicación\"",
+    "da": "Tilføj en handling for et langt tryk på en knap, omdøb handlingen \"send tast\" til \"tryk på en knap\" og den første version af handlingen \"åbn en applikation\"",
+    "pl": "Dodaj akcję dla długiego naciśnięcia przycisku, zmień nazwę akcji \"wyślij klucz\" na \"naciśnij przycisk\" i pierwszą wersję akcji \"otwórz aplikację\""
   }
 }
