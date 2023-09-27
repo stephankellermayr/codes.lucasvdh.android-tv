@@ -1,6 +1,7 @@
 import {Remote} from "../../remote";
-import {DeviceData, DeviceSettings, SettingsInput} from "./types";
+import {DeviceSettings, DeviceStore, SettingsInput} from "./types";
 import AndroidTVRemoteClient, {Input, Volume} from "./client";
+import RemoteMessage from "../../androidtv-remote/remote/RemoteMessage";
 
 /**
  * @property {RemoteDriver} driver
@@ -53,19 +54,28 @@ class RemoteDevice extends Remote {
     ]
     private CAPABILITIES_SET_DEBOUNCE: number = 100;
 
-    async initializeClient() {
-        const data: DeviceData = this.getData();
+    async initializeClient(): Promise<void> {
+        const store: DeviceStore = this.getStore();
         const settings: DeviceSettings = this.getSettings();
 
         this.client = new AndroidTVRemoteClient(
             settings.ip,
-            data.cert
+            store.cert
         );
+
+        this.client.on('error', async (error) => {
+            this.log('client.on(error)', error);
+        });
+
         await this.client.start();
 
         this.client.on('ready', () => {
             this.log("Client has been initialized")
             this.setAvailable();
+        })
+        this.client.on('close', ({hasError, error}) => {
+            this.log("Client has been closed")
+            this.setUnavailable();
         })
 
         await this.registerClientListeners()
@@ -102,7 +112,7 @@ class RemoteDevice extends Remote {
             }).catch(this.error)
         });
 
-        this.client.on('unpaired', async () => {
+        this.client.on('unpaired', async (error: RemoteMessage | undefined): Promise<void> => {
             await this.setUnavailable(this.homey.__('error.unpaired'));
         });
 
@@ -118,7 +128,9 @@ class RemoteDevice extends Remote {
     }
 
     private async registerCapabilityListeners() {
-        this.registerMultipleCapabilityListener(this.keyCapabilities, async (capabilityValues: { [x: string]: any; }, capabilityOptions: { [x: string]: any; }) => {
+        this.registerMultipleCapabilityListener(this.keyCapabilities, async (capabilityValues: {
+            [x: string]: any;
+        }, capabilityOptions: { [x: string]: any; }) => {
             return this.onCapabilitiesKeySet(capabilityValues, capabilityOptions)
         }, this.CAPABILITIES_SET_DEBOUNCE)
 
@@ -143,7 +155,9 @@ class RemoteDevice extends Remote {
         // })
     }
 
-    private async onCapabilitiesKeySet(capability: { [x: string]: any; }, options: { [x: string]: any; }): Promise<void> {
+    private async onCapabilitiesKeySet(capability: { [x: string]: any; }, options: {
+        [x: string]: any;
+    }): Promise<void> {
         if (typeof capability.key_stop !== 'undefined') {
             return this.client?.sendKeyMediaStop();
         } else if (typeof capability.key_play !== 'undefined') {
