@@ -1,7 +1,16 @@
-import {Device, DiscoveryResultMAC, DiscoveryResultMDNSSD, DiscoveryResultSSDP, DiscoveryStrategy, Driver, FlowCardTriggerDevice} from "homey";
+import {
+    Device,
+    DiscoveryResultMAC,
+    DiscoveryResultMDNSSD,
+    DiscoveryResultSSDP,
+    DiscoveryStrategy,
+    Driver,
+    FlowCardTriggerDevice
+} from "homey";
 import AndroidTVRemoteClient from "./client";
-import {Device as DeviceType} from "./types";
+import {Device as DeviceType, DeviceData, DeviceSettings} from "./types";
 import RemoteDevice from "./device";
+import PairSession from "homey/lib/PairSession";
 
 class RemoteDriver extends Driver {
     private applicationOpenedTrigger: FlowCardTriggerDevice | undefined;
@@ -89,7 +98,7 @@ class RemoteDriver extends Driver {
             const pairingResult = await pairingClient.sendCode(code.join(''));
 
             if (pairingResult) {
-                pairingDevice.data.cert = await pairingClient.getCertificate();
+                pairingDevice.store.cert = await pairingClient.getCertificate();
                 session.showView('add_device')
             } else {
                 session.showView('discover')
@@ -107,8 +116,65 @@ class RemoteDriver extends Driver {
         })
     }
 
+    async onRepair(session: PairSession, repairingDevice: Device): Promise<void> {
+        // Argument session is a PairSocket, similar to Driver.onPair
+        // Argument device is a Homey.Device that's being repaired
+
+        this.log('Repairing device', repairingDevice.getName())
+
+        const pairingClient = this.getPairingClientByDevice({
+            name: repairingDevice.getName(),
+            data: repairingDevice.getData() as DeviceData,
+            store: {},
+            settings: repairingDevice.getSettings() as DeviceSettings
+        } as DeviceType);
+
+        session.setHandler('showView', async (view: string) => {
+            this.log('Show view', view)
+
+            if (view === 'start_repair') {
+                console.log('START PAIRING')
+
+                pairingClient.on('secret', () => {
+                    this.log('Pairing client started, show authenticate view')
+                    session.showView('authenticate')
+                })
+
+                await pairingClient.start();
+            }
+        });
+
+        session.setHandler('pincode', async (code: Buffer) => {
+            if (pairingClient === null) {
+                this.error('Pairing client should not be null');
+                return;
+            }
+            if (repairingDevice === null) {
+                this.error('Pairing device should not be null');
+                return;
+            }
+
+            this.log('Pincode submitted', code.join(''))
+
+            const pairingResult = await pairingClient.sendCode(code.join(''));
+
+            if (pairingResult) {
+                await repairingDevice.setStoreValue('cert', await pairingClient.getCertificate());
+                session.done()
+            } else {
+                session.showView('authenticate')
+            }
+
+            return pairingResult;
+        })
+
+        session.setHandler("disconnect", async () => {
+            // Cleanup
+        });
+    }
+
     private getPairingClientByDevice(device: DeviceType): AndroidTVRemoteClient {
-        return new AndroidTVRemoteClient(device.settings.ip, device.data.cert);
+        return new AndroidTVRemoteClient(device.settings.ip, device.store.cert);
     }
 
     private getDeviceByDiscoveryResult(discoveryResult: DiscoveryResultMDNSSD): DeviceType {
@@ -116,7 +182,12 @@ class RemoteDriver extends Driver {
             name: this.getNameByMDNSDiscoveryResult(discoveryResult),
             data: {
                 id: discoveryResult.id,
-                cert: {}
+            },
+            store: {
+                cert: {
+                    key: undefined,
+                    cert: undefined,
+                }
             },
             settings: {
                 ip: discoveryResult.address
@@ -156,7 +227,7 @@ class RemoteDriver extends Driver {
         this.applicationOpenedTrigger = this.homey.flow.getDeviceTriggerCard('application_opened')
     }
 
-    private triggerApplicationOpenedTrigger (device: RemoteDevice, args: { app: string }) {
+    private triggerApplicationOpenedTrigger(device: RemoteDevice, args: { app: string }) {
         return this.applicationOpenedTrigger?.trigger(device, args)
     }
 }

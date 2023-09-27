@@ -85,6 +85,47 @@
       "id": "add_my_device"
     }
   ],
+  "repair": [
+    {
+      "id": "start_repair",
+      "template": "loading"
+    },
+    {
+      "id": "authenticate",
+      "template": "pincode",
+      "options": {
+        "title": {
+          "en": "Pincode",
+          "nl": "Pincode",
+          "de": "Pin-Code",
+          "fr": "Code Pin",
+          "it": "Codice Pin",
+          "sv": "Pin-kod",
+          "no": "Pinkode",
+          "es": "Código PIN",
+          "da": "Pin-kode",
+          "pl": "Kod PIN"
+        },
+        "hint": {
+          "en": "Enter the code displayed on the TV",
+          "nl": "Vul de code in die op de TV wordt weergegeven",
+          "de": "Geben Sie den auf dem Fernseher angezeigten Code ein",
+          "fr": "Entrez le code affiché sur la télévision",
+          "it": "Inserisci il codice visualizzato sul televisore",
+          "sv": "Ange koden som visas på TV:n",
+          "no": "Skriv inn koden som vises på TV-en",
+          "es": "Ingrese el código que se muestra en la televisión",
+          "da": "Indtast koden, der vises på tv'et",
+          "pl": "Wprowadź kod wyświetlany na telewizorze"
+        },
+        "type": "text",
+        "length": 6
+      },
+      "navigation": {
+        "prev": "discover"
+      }
+    }
+  ],
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
