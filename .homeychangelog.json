@@ -58,5 +58,17 @@
     "es": "Agregar una acción para una pulsación larga en un botón, renombrar la acción \"enviar tecla\" como \"presionar un botón\" y la primera versión de la acción \"abrir una aplicación\"",
     "da": "Tilføj en handling for et langt tryk på en knap, omdøb handlingen \"send tast\" til \"tryk på en knap\" og den første version af handlingen \"åbn en applikation\"",
     "pl": "Dodaj akcję dla długiego naciśnięcia przycisku, zmień nazwę akcji \"wyślij klucz\" na \"naciśnij przycisk\" i pierwszą wersję akcji \"otwórz aplikację\""
+  },
+  "0.5.0": {
+    "en": "Fix infinite crash loop, add repair flow and reduce memory usage",
+    "nl": "Fix voor oneindige crash-lus, opnieuw koppelen flow toegevoegd en geheugengebruik verminderd",
+    "de": "Beheben Sie eine endlose Absturzschleife, fügen Sie einen Reparaturvorgang hinzu und reduzieren Sie den Speicherverbrauch",
+    "fr": "Correction de la boucle de plantage infinie, ajout d'un flux de réparation et réduction de l'utilisation de la mémoire",
+    "it": "Risolvere il ciclo di crash infinito, aggiungere un flusso di riparazione e ridurre l'uso della memoria",
+    "sv": "Åtgärda oändlig kraschloop, lägg till reparationsflöde och minska minnesanvändningen",
+    "no": "Fiks uendelig krasjloop, legg til reparasjonsflyt og reduser minnebruk",
+    "es": "Solucionar el bucle de bloqueo infinito, agregar un flujo de reparación y reducir el uso de memoria",
+    "da": "Løs uendelig crash-loop, tilføj reparationsflow og reducer hukommelsesforbrug",
+    "pl": "Naprawa nieskończonej pętli awarii, dodanie przepływu naprawy i zmniejszenie użycia pamięci"
   }
 }
