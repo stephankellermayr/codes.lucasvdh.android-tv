@@ -1,9 +1,6 @@
-import sourceMapSupport from "source-map-support";
 import Homey, {FlowCard} from "homey";
 import RemoteDevice from "./drivers/remote/device";
 import {RemoteDirection} from "./androidtv-remote";
-
-sourceMapSupport.install();
 
 class AndroidTV extends Homey.App {
     /**
