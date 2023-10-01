@@ -82,5 +82,17 @@
     "es": "Solucionar el bucle de bloqueo infinito, agregar un flujo de reparación y reducir el uso de memoria",
     "da": "Løs uendelig crash-loop, tilføj reparationsflow og reducer hukommelsesforbrug",
     "pl": "Naprawa nieskończonej pętli awarii, dodanie przepływu naprawy i zmniejszenie użycia pamięci"
+  },
+  "0.5.2": {
+    "en": "Fix the device not found error crashing the app",
+    "nl": "Los het probleem op van het niet kunnen vinden van het apparaat waardoor de app crasht",
+    "de": "Behebe das Problem mit dem nicht gefundenen Gerät, das die App abstürzen lässt",
+    "fr": "Corrigez l'erreur de périphérique introuvable qui fait planter l'application",
+    "it": "Risolvere l'errore di dispositivo non trovato che causa il blocco dell'applicazione",
+    "sv": "Fixa problemet med enheten som inte hittas och får appen att krascha",
+    "no": "Fiks feilen med enheten som ikke blir funnet og får appen til å krasje",
+    "es": "Solucionar el error de dispositivo no encontrado que hace que la aplicación se bloquee",
+    "da": "Løs problemet med enheden, der ikke findes, og får appen til at gå ned",
+    "pl": "Napraw błąd braku znalezienia urządzenia, który powoduje awarię aplikacji"
   }
 }

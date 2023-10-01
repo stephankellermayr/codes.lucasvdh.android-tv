@@ -1,6 +1,6 @@
 {
   "name": "codes.lucasvdh.android-tv",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "main": "app.ts",
   "scripts": {
     "homey-validate": "homey app validate --level verified",
