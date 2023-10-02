@@ -94,5 +94,17 @@
     "es": "Solucionar el error de dispositivo no encontrado que hace que la aplicación se bloquee",
     "da": "Løs problemet med enheden, der ikke findes, og får appen til at gå ned",
     "pl": "Napraw błąd braku znalezienia urządzenia, który powoduje awarię aplikacji"
+  },
+  "0.6.0": {
+    "en": "Add the channel up and down buttons to the remote control",
+    "nl": "Voeg de knoppen voor kanaal omhoog en omlaag toe aan de afstandsbediening",
+    "de": "Fügen Sie die Kanal-hoch und Kanal-runter Tasten zur Fernbedienung hinzu",
+    "fr": "Ajoutez les boutons de montée et de descente de chaîne à la télécommande",
+    "it": "Aggiungi i pulsanti di canale su e giù al telecomando",
+    "sv": "Lägg till kanal upp och ner knappar på fjärrkontrollen",
+    "no": "Legg til kanal opp og ned knapper på fjernkontrollen",
+    "es": "Añade los botones de subir y bajar canal al control remoto",
+    "da": "Tilføj kanal op og ned knapperne til fjernbetjeningen",
+    "pl": "Dodaj przyciski do góry i w dół kanału do pilota"
   }
 }
