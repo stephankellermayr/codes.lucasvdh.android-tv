@@ -32,6 +32,8 @@
     "cursor_up": "Kursor w górę",
     "cursor_right": "Kursor w prawo",
     "cursor_down": "Kursor w dół",
+    "channel_up": "Zwiększ kanał",
+    "channel_down": "Zmniejsz kanał",
     "options": "Opcje",
     "back": "Powrót",
     "home": "Strona główna"

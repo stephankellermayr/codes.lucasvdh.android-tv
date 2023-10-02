@@ -31,6 +31,8 @@ class RemoteDevice extends Remote {
     'key_cursor_up',
     'key_cursor_right',
     'key_cursor_down',
+    'key_channel_up',
+    'key_channel_down',
     // 'key_info',
     // 'key_digit_1',
     // 'key_digit_2',
@@ -201,6 +203,10 @@ class RemoteDevice extends Remote {
       return this.client?.sendKeyMediaPrevious();
     } else if (typeof capability.key_next !== 'undefined') {
       return this.client?.sendKeyMediaNext();
+    } else if (typeof capability.key_channel_up !== 'undefined') {
+      return this.client?.sendKeyChannelUp();
+    } else if (typeof capability.key_channel_down !== 'undefined') {
+      return this.client?.sendKeyChannelDown();
     }
         // else if (typeof capability.key_adjust !== 'undefined') {
         //     return this.sendKey('Adjust')
@@ -277,6 +283,8 @@ class RemoteDevice extends Remote {
       "key_cursor_right",
       "key_cursor_down",
       "key_cursor_left",
+      "key_channel_up",
+      "key_channel_down",
       "key_back",
       "key_home",
       "key_confirm",
@@ -357,6 +365,10 @@ class RemoteDevice extends Remote {
       this.client?.sendKeyMediaStop(direction);
     } else if (key === 'key_next') {
       this.client?.sendKeyMediaNext(direction);
+    } else if (key === 'key_channel_up') {
+      this.client?.sendKeyChannelUp(direction);
+    } else if (key === 'key_channel_down') {
+      this.client?.sendKeyChannelDown(direction);
     } else if (key === 'key_cursor_left') {
       this.client?.sendKeyDpadLeft(direction);
     } else if (key === 'key_cursor_up') {
@@ -459,6 +471,14 @@ class RemoteDevice extends Remote {
       {
         key: 'key_cursor_down',
         name: this.homey.__(`key.cursor_down`)
+      },
+      {
+        key: 'key_channel_up',
+        name: this.homey.__(`key.channel_up`)
+      },
+      {
+        key: 'key_channel_down',
+        name: this.homey.__(`key.channel_down`)
       },
       {
         key: 'key_options',

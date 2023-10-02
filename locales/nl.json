@@ -32,6 +32,8 @@
     "cursor_up": "D-pad omhoog",
     "cursor_right": "D-pad rechts",
     "cursor_down": "D-pad omlaag",
+    "channel_up": "Kanaal omhoog",
+    "channel_down": "Kanaal omlaag",
     "options": "Opties",
     "back": "Terug",
     "home": "Start"

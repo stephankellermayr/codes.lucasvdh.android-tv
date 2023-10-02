@@ -32,6 +32,8 @@
     "cursor_up": "Opad pil",
     "cursor_right": "Højre pil",
     "cursor_down": "Nedad pil",
+    "channel_up": "Kanal op",
+    "channel_down": "Kanal ned",
     "options": "Indstillinger",
     "back": "Tilbage",
     "home": "Hjem"

@@ -32,6 +32,8 @@
     "cursor_up": "Arriba",
     "cursor_right": "Derecha",
     "cursor_down": "Abajo",
+    "channel_up": "Subir canal",
+    "channel_down": "Bajar canal",
     "options": "Opciones",
     "back": "Atrás",
     "home": "Inicio"

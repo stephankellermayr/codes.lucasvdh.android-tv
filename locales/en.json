@@ -32,6 +32,8 @@
     "cursor_up": "D-pad up",
     "cursor_right": "D-pad right",
     "cursor_down": "D-pad down",
+    "channel_up": "Channel up",
+    "channel_down": "Channel down",
     "options": "Options",
     "back": "Back",
     "home": "Home"

@@ -32,6 +32,8 @@
     "cursor_up": "Flèche haut",
     "cursor_right": "Flèche droite",
     "cursor_down": "Flèche bas",
+    "channel_up": "Monter la chaîne",
+    "channel_down": "Descendre la chaîne",
     "options": "Options",
     "back": "Retour",
     "home": "Accueil"

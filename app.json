@@ -572,6 +572,8 @@
         "key_previous",
         "key_next",
         "key_watch_tv",
+        "key_channel_up",
+        "key_channel_down",
         "key_source"
       ],
       "id": "remote",
@@ -626,6 +628,30 @@
       "uiComponent": "button",
       "uiQuickAction": true,
       "icon": "assets/capabilities/back.svg"
+    },
+    "key_channel_down": {
+      "type": "boolean",
+      "title": {
+        "en": "Channel down",
+        "nl": "Kanaal omlaag"
+      },
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true,
+      "icon": "assets/capabilities/channel_down.svg"
+    },
+    "key_channel_up": {
+      "type": "boolean",
+      "title": {
+        "en": "Channel up",
+        "nl": "Kanaal omhoog"
+      },
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true,
+      "icon": "assets/capabilities/channel_up.svg"
     },
     "key_confirm": {
       "type": "boolean",

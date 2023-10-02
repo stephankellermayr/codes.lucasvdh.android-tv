@@ -156,6 +156,8 @@
     "key_previous",
     "key_next",
     "key_watch_tv",
+    "key_channel_up",
+    "key_channel_down",
     "key_source"
   ]
 }

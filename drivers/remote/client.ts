@@ -146,6 +146,14 @@ export default class AndroidTVRemoteClient {
     this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_NEXT, direction || RemoteDirection.SHORT)
   }
 
+  public sendKeyChannelUp(direction: number | null = null): void {
+    this.client.sendKey(RemoteKeyCode.KEYCODE_CHANNEL_UP, direction || RemoteDirection.SHORT)
+  }
+
+  public sendKeyChannelDown(direction: number | null = null): void {
+    this.client.sendKey(RemoteKeyCode.KEYCODE_CHANNEL_DOWN, direction || RemoteDirection.SHORT)
+  }
+
   public sendKeyMediaPrevious(direction: number | null = null): void {
     this.client.sendKey(RemoteKeyCode.KEYCODE_MEDIA_PREVIOUS, direction || RemoteDirection.SHORT)
   }

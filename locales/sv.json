@@ -32,6 +32,8 @@
     "cursor_up": "D-pad upp",
     "cursor_right": "D-pad höger",
     "cursor_down": "D-pad ner",
+    "channel_up": "Byt upp kanal",
+    "channel_down": "Byt ner kanal",
     "options": "Alternativ",
     "back": "Tillbaka",
     "home": "Hem"

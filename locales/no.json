@@ -32,6 +32,8 @@
     "cursor_up": "Pil opp",
     "cursor_right": "Pil høyre",
     "cursor_down": "Pil ned",
+    "channel_up": "Kanal opp",
+    "channel_down": "Kanal ned",
     "options": "Alternativer",
     "back": "Tilbake",
     "home": "Hjem"
