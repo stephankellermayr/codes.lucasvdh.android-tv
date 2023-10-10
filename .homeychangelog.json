@@ -106,5 +106,17 @@
     "es": "Añade los botones de subir y bajar canal al control remoto",
     "da": "Tilføj kanal op og ned knapperne til fjernbetjeningen",
     "pl": "Dodaj przyciski do góry i w dół kanału do pilota"
+  },
+  "0.6.1": {
+    "en": "Fix device not found error",
+    "nl": "Los het probleem met het niet kunnen vinden van het apparaat op",
+    "de": "Beheben des Fehlers 'Gerät nicht gefunden'",
+    "fr": "Résoudre l'erreur 'Appareil non trouvé'",
+    "it": "Risolvere l'errore 'Dispositivo non trovato'",
+    "sv": "Åtgärda felmeddelandet 'Enhet hittades inte'",
+    "no": "Fiks feilmelding 'Enhet ikke funnet'",
+    "es": "Corregir el error de 'Dispositivo no encontrado'",
+    "da": "Løs fejlen 'Enhed ikke fundet'",
+    "pl": "Napraw błąd 'Urządzenie nie znalezione'"
   }
 }

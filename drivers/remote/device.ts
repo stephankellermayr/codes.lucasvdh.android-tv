@@ -93,6 +93,10 @@ class RemoteDevice extends Remote {
     }
   }
 
+  async onUninit(): Promise<void> {
+    this.client?.stop();
+  }
+
   private async registerClientListeners() {
     if (!this.client) {
       throw new Error('Client not initialized');
