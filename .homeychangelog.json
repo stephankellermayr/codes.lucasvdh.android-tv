@@ -118,5 +118,17 @@
     "es": "Corregir el error de 'Dispositivo no encontrado'",
     "da": "Løs fejlen 'Enhed ikke fundet'",
     "pl": "Napraw błąd 'Urządzenie nie znalezione'"
+  },
+  "0.7.0": {
+    "en": "Added missing capability translations",
+    "nl": "Ontbrekende vertalingen voor mogelijkheden toegevoegd",
+    "de": "Hinzugefügte fehlende Fähigkeitsübersetzungen",
+    "fr": "Ajout des traductions manquantes des capacités",
+    "it": "Aggiunte traduzioni mancanti delle capacità",
+    "sv": "Lade till saknade översättningar av förmågor",
+    "no": "La til manglende oversettelser av evner",
+    "es": "Añadidas traducciones faltantes de capacidades",
+    "da": "Tilføjet manglende oversættelser af evner",
+    "pl": "Dodano brakujące tłumaczenia umiejętności"
   }
 }

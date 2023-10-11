@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "codes.lucasvdh.android-tv",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#3DDC84",
@@ -427,6 +427,9 @@
         "da": "Fjernbetjening",
         "pl": "Pilot zdalnego sterowania"
       },
+      "connectivity": [
+        "lan"
+      ],
       "pair": [
         {
           "id": "discover",
@@ -633,7 +636,15 @@
       "type": "boolean",
       "title": {
         "en": "Channel down",
-        "nl": "Kanaal omlaag"
+        "nl": "Kanaal omlaag",
+        "de": "Kanal runter",
+        "fr": "Chaîne en baisse",
+        "it": "Canale giù",
+        "sv": "Kanal ner",
+        "no": "Kanal ned",
+        "es": "Canal abajo",
+        "da": "Kanal ned",
+        "pl": "Kanał w dół"
       },
       "getable": false,
       "setable": true,
@@ -645,7 +656,15 @@
       "type": "boolean",
       "title": {
         "en": "Channel up",
-        "nl": "Kanaal omhoog"
+        "nl": "Kanaal omhoog",
+        "de": "Kanal hoch",
+        "fr": "Chaîne en hausse",
+        "it": "Canale su",
+        "sv": "Kanal upp",
+        "no": "Kanal opp",
+        "es": "Canal arriba",
+        "da": "Kanal op",
+        "pl": "Kanał w górę"
       },
       "getable": false,
       "setable": true,
@@ -657,7 +676,15 @@
       "type": "boolean",
       "title": {
         "en": "Confirm",
-        "nl": "Bevestig"
+        "nl": "Bevestig",
+        "de": "Bestätigen",
+        "fr": "Confirmer",
+        "it": "Conferma",
+        "sv": "Bekräfta",
+        "no": "Bekreft",
+        "es": "Confirmar",
+        "da": "Bekræft",
+        "pl": "Potwierdź"
       },
       "getable": false,
       "setable": true,
@@ -669,7 +696,15 @@
       "type": "boolean",
       "title": {
         "en": "Cursor down",
-        "nl": "Wijzer beneden"
+        "nl": "Wijzer beneden",
+        "de": "Cursor nach unten",
+        "fr": "Curseur vers le bas",
+        "it": "Cursore giù",
+        "sv": "Cursor nedåt",
+        "no": "Pil ned",
+        "es": "Cursor abajo",
+        "da": "Cursor ned",
+        "pl": "Kursor w dół"
       },
       "getable": false,
       "setable": true,
@@ -681,7 +716,15 @@
       "type": "boolean",
       "title": {
         "en": "Cursor left",
-        "nl": "Wijzer links"
+        "nl": "Wijzer links",
+        "de": "Cursor nach links",
+        "fr": "Curseur à gauche",
+        "it": "Cursore a sinistra",
+        "sv": "Cursor vänster",
+        "no": "Pil til venstre",
+        "es": "Cursor izquierda",
+        "da": "Cursor til venstre",
+        "pl": "Kursor w lewo"
       },
       "getable": false,
       "setable": true,
@@ -693,7 +736,15 @@
       "type": "boolean",
       "title": {
         "en": "Cursor right",
-        "nl": "Wijzer rechts"
+        "nl": "Wijzer rechts",
+        "de": "Cursor nach rechts",
+        "fr": "Curseur à droite",
+        "it": "Cursore a destra",
+        "sv": "Cursor höger",
+        "no": "Pil til høyre",
+        "es": "Cursor derecha",
+        "da": "Cursor til højre",
+        "pl": "Kursor w prawo"
       },
       "getable": false,
       "setable": true,
@@ -705,7 +756,15 @@
       "type": "boolean",
       "title": {
         "en": "Cursor up",
-        "nl": "Wijzer omhoog"
+        "nl": "Wijzer omhoog",
+        "de": "Cursor nach oben",
+        "fr": "Curseur vers le haut",
+        "it": "Cursore su",
+        "sv": "Cursor uppåt",
+        "no": "Pil opp",
+        "es": "Cursor arriba",
+        "da": "Cursor op",
+        "pl": "Kursor w górę"
       },
       "getable": false,
       "setable": true,
@@ -717,7 +776,15 @@
       "type": "boolean",
       "title": {
         "en": "Fast forward",
-        "nl": "Doorspoelen"
+        "nl": "Doorspoelen",
+        "de": "Vorspulen",
+        "fr": "Avance rapide",
+        "it": "Avanzamento veloce",
+        "sv": "Snabbspola framåt",
+        "no": "Spol raskt fremover",
+        "es": "Avance rápido",
+        "da": "Spol hurtigt fremad",
+        "pl": "Przewiń do przodu"
       },
       "getable": false,
       "setable": true,
@@ -729,7 +796,15 @@
       "type": "boolean",
       "title": {
         "en": "Home",
-        "nl": "Home"
+        "nl": "Home",
+        "de": "Startseite",
+        "fr": "Accueil",
+        "it": "Home",
+        "sv": "Hem",
+        "no": "Hjem",
+        "es": "Inicio",
+        "da": "Hjem",
+        "pl": "Strona główna"
       },
       "getable": false,
       "setable": true,
@@ -741,7 +816,15 @@
       "type": "boolean",
       "title": {
         "en": "Next",
-        "nl": "Volgende"
+        "nl": "Volgende",
+        "de": "Nächste",
+        "fr": "Suivant",
+        "it": "Avanti",
+        "sv": "Nästa",
+        "no": "Neste",
+        "es": "Siguiente",
+        "da": "Næste",
+        "pl": "Następny"
       },
       "getable": false,
       "setable": true,
@@ -753,7 +836,15 @@
       "type": "boolean",
       "title": {
         "en": "Pause",
-        "nl": "Pauze"
+        "nl": "Pauze",
+        "de": "Pause",
+        "fr": "Pause",
+        "it": "Pausa",
+        "sv": "Paus",
+        "no": "Pause",
+        "es": "Pausa",
+        "da": "Pause",
+        "pl": "Pauza"
       },
       "getable": false,
       "setable": true,
@@ -765,7 +856,15 @@
       "type": "boolean",
       "title": {
         "en": "Play",
-        "nl": "Play"
+        "nl": "Play",
+        "de": "Abspielen",
+        "fr": "Lire",
+        "it": "Riproduci",
+        "sv": "Spela",
+        "no": "Spill",
+        "es": "Reproducir",
+        "da": "Afspil",
+        "pl": "Odtwórz"
       },
       "getable": false,
       "setable": true,
@@ -777,7 +876,15 @@
       "type": "boolean",
       "title": {
         "en": "Previous",
-        "nl": "Vorige"
+        "nl": "Vorige",
+        "de": "Vorherige",
+        "fr": "Précédent",
+        "it": "Precedente",
+        "sv": "Föregående",
+        "no": "Forrige",
+        "es": "Anterior",
+        "da": "Forrige",
+        "pl": "Poprzedni"
       },
       "getable": false,
       "setable": true,
@@ -789,7 +896,15 @@
       "type": "boolean",
       "title": {
         "en": "Rewind",
-        "nl": "Terugspoelen"
+        "nl": "Terugspoelen",
+        "de": "Zurückspulen",
+        "fr": "Rembobiner",
+        "it": "Riavvolgere",
+        "sv": "Spola tillbaka",
+        "no": "Spol tilbake",
+        "es": "Rebobinar",
+        "da": "Spol tilbage",
+        "pl": "Cofnij"
       },
       "getable": false,
       "setable": true,
@@ -801,7 +916,15 @@
       "type": "boolean",
       "title": {
         "en": "Source",
-        "nl": "Source"
+        "nl": "Bron",
+        "de": "Quelle",
+        "fr": "Source",
+        "it": "Sorgente",
+        "sv": "Källa",
+        "no": "Kilde",
+        "es": "Fuente",
+        "da": "Kilde",
+        "pl": "Źródło"
       },
       "getable": false,
       "setable": true,
@@ -813,7 +936,15 @@
       "type": "boolean",
       "title": {
         "en": "Stop",
-        "nl": "Stop"
+        "nl": "Stop",
+        "de": "Anhalten",
+        "fr": "Arrêter",
+        "it": "Fermare",
+        "sv": "Stoppa",
+        "no": "Stopp",
+        "es": "Detener",
+        "da": "Stop",
+        "pl": "Zatrzymaj"
       },
       "getable": false,
       "setable": true,
@@ -825,7 +956,15 @@
       "type": "boolean",
       "title": {
         "en": "Ambilight toggle",
-        "nl": "Ambilight aan/uit"
+        "nl": "Ambilight aan/uit",
+        "de": "Ambilight umschalten",
+        "fr": "Activer/Désactiver Ambilight",
+        "it": "Attiva/Disattiva Ambilight",
+        "sv": "Ambilight växla",
+        "no": "Ambilight på/av",
+        "es": "Alternar Ambilight",
+        "da": "Ambilight tænd/sluk",
+        "pl": "Przełącz Ambilight"
       },
       "getable": false,
       "setable": true,
@@ -837,7 +976,15 @@
       "type": "boolean",
       "title": {
         "en": "Subtitle on/off",
-        "nl": "Ondertiteling aan/uit"
+        "nl": "Ondertiteling aan/uit",
+        "de": "Untertitel ein/aus",
+        "fr": "Sous-titres activés/désactivés",
+        "it": "Sottotitoli on/off",
+        "sv": "Textning på/av",
+        "no": "Teksting på/av",
+        "es": "Subtítulos activados/desactivados",
+        "da": "Undertekster til/fra",
+        "pl": "Napisy włącz/wyłącz"
       },
       "getable": false,
       "setable": true,
@@ -849,7 +996,15 @@
       "type": "boolean",
       "title": {
         "en": "Watch TV",
-        "nl": "TV kijken"
+        "nl": "TV kijken",
+        "de": "Fernsehen",
+        "fr": "Regarder la télévision",
+        "it": "Guarda la TV",
+        "sv": "Titta på TV",
+        "no": "Se på TV",
+        "es": "Ver la televisión",
+        "da": "Se TV",
+        "pl": "Oglądaj telewizję"
       },
       "getable": false,
       "setable": true,
@@ -861,7 +1016,15 @@
       "type": "number",
       "title": {
         "en": "Volume",
-        "nl": "Volume"
+        "nl": "Volume",
+        "de": "Lautstärke",
+        "fr": "Volume",
+        "it": "Volume",
+        "sv": "Volym",
+        "no": "Volum",
+        "es": "Volumen",
+        "da": "Volumen",
+        "pl": "Głośność"
       },
       "icon": "/assets/capabilities/measure_volume.svg",
       "uiComponent": "sensor",
