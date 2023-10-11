@@ -2,7 +2,15 @@
   "type": "number",
   "title": {
     "en": "Volume",
-    "nl": "Volume"
+    "nl": "Volume",
+    "de": "Lautstärke",
+    "fr": "Volume",
+    "it": "Volume",
+    "sv": "Volym",
+    "no": "Volum",
+    "es": "Volumen",
+    "da": "Volumen",
+    "pl": "Głośność"
   },
   "icon": "/assets/capabilities/measure_volume.svg",
   "uiComponent": "sensor",

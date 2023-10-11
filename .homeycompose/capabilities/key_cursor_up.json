@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Cursor up",
-    "nl": "Wijzer omhoog"
+    "nl": "Wijzer omhoog",
+    "de": "Cursor nach oben",
+    "fr": "Curseur vers le haut",
+    "it": "Cursore su",
+    "sv": "Cursor uppåt",
+    "no": "Pil opp",
+    "es": "Cursor arriba",
+    "da": "Cursor op",
+    "pl": "Kursor w górę"
   },
   "getable": false,
   "setable": true,

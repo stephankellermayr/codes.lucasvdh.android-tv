@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Cursor left",
-    "nl": "Wijzer links"
+    "nl": "Wijzer links",
+    "de": "Cursor nach links",
+    "fr": "Curseur à gauche",
+    "it": "Cursore a sinistra",
+    "sv": "Cursor vänster",
+    "no": "Pil til venstre",
+    "es": "Cursor izquierda",
+    "da": "Cursor til venstre",
+    "pl": "Kursor w lewo"
   },
   "getable": false,
   "setable": true,

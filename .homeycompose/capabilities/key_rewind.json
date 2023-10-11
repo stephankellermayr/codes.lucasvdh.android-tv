@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Rewind",
-    "nl": "Terugspoelen"
+    "nl": "Terugspoelen",
+    "de": "Zurückspulen",
+    "fr": "Rembobiner",
+    "it": "Riavvolgere",
+    "sv": "Spola tillbaka",
+    "no": "Spol tilbake",
+    "es": "Rebobinar",
+    "da": "Spol tilbage",
+    "pl": "Cofnij"
   },
   "getable": false,
   "setable": true,

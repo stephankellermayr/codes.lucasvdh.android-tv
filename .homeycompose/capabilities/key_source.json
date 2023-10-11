@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Source",
-    "nl": "Source"
+    "nl": "Bron",
+    "de": "Quelle",
+    "fr": "Source",
+    "it": "Sorgente",
+    "sv": "Källa",
+    "no": "Kilde",
+    "es": "Fuente",
+    "da": "Kilde",
+    "pl": "Źródło"
   },
   "getable": false,
   "setable": true,

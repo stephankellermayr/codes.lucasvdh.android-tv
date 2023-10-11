@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Watch TV",
-    "nl": "TV kijken"
+    "nl": "TV kijken",
+    "de": "Fernsehen",
+    "fr": "Regarder la télévision",
+    "it": "Guarda la TV",
+    "sv": "Titta på TV",
+    "no": "Se på TV",
+    "es": "Ver la televisión",
+    "da": "Se TV",
+    "pl": "Oglądaj telewizję"
   },
   "getable": false,
   "setable": true,

@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Next",
-    "nl": "Volgende"
+    "nl": "Volgende",
+    "de": "Nächste",
+    "fr": "Suivant",
+    "it": "Avanti",
+    "sv": "Nästa",
+    "no": "Neste",
+    "es": "Siguiente",
+    "da": "Næste",
+    "pl": "Następny"
   },
   "getable": false,
   "setable": true,

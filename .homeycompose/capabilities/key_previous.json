@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Previous",
-    "nl": "Vorige"
+    "nl": "Vorige",
+    "de": "Vorherige",
+    "fr": "Précédent",
+    "it": "Precedente",
+    "sv": "Föregående",
+    "no": "Forrige",
+    "es": "Anterior",
+    "da": "Forrige",
+    "pl": "Poprzedni"
   },
   "getable": false,
   "setable": true,

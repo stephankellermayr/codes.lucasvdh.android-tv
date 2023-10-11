@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Home",
-    "nl": "Home"
+    "nl": "Home",
+    "de": "Startseite",
+    "fr": "Accueil",
+    "it": "Home",
+    "sv": "Hem",
+    "no": "Hjem",
+    "es": "Inicio",
+    "da": "Hjem",
+    "pl": "Strona główna"
   },
   "getable": false,
   "setable": true,

@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Channel down",
-    "nl": "Kanaal omlaag"
+    "nl": "Kanaal omlaag",
+    "de": "Kanal runter",
+    "fr": "Chaîne en baisse",
+    "it": "Canale giù",
+    "sv": "Kanal ner",
+    "no": "Kanal ned",
+    "es": "Canal abajo",
+    "da": "Kanal ned",
+    "pl": "Kanał w dół"
   },
   "getable": false,
   "setable": true,

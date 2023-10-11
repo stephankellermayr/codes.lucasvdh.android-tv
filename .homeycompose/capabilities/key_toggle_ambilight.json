@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Ambilight toggle",
-    "nl": "Ambilight aan/uit"
+    "nl": "Ambilight aan/uit",
+    "de": "Ambilight umschalten",
+    "fr": "Activer/Désactiver Ambilight",
+    "it": "Attiva/Disattiva Ambilight",
+    "sv": "Ambilight växla",
+    "no": "Ambilight på/av",
+    "es": "Alternar Ambilight",
+    "da": "Ambilight tænd/sluk",
+    "pl": "Przełącz Ambilight"
   },
   "getable": false,
   "setable": true,

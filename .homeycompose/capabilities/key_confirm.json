@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Confirm",
-    "nl": "Bevestig"
+    "nl": "Bevestig",
+    "de": "Bestätigen",
+    "fr": "Confirmer",
+    "it": "Conferma",
+    "sv": "Bekräfta",
+    "no": "Bekreft",
+    "es": "Confirmar",
+    "da": "Bekræft",
+    "pl": "Potwierdź"
   },
   "getable": false,
   "setable": true,

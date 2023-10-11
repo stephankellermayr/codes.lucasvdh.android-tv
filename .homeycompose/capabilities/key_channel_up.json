@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Channel up",
-    "nl": "Kanaal omhoog"
+    "nl": "Kanaal omhoog",
+    "de": "Kanal hoch",
+    "fr": "Chaîne en hausse",
+    "it": "Canale su",
+    "sv": "Kanal upp",
+    "no": "Kanal opp",
+    "es": "Canal arriba",
+    "da": "Kanal op",
+    "pl": "Kanał w górę"
   },
   "getable": false,
   "setable": true,

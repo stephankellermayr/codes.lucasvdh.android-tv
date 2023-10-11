@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Subtitle on/off",
-    "nl": "Ondertiteling aan/uit"
+    "nl": "Ondertiteling aan/uit",
+    "de": "Untertitel ein/aus",
+    "fr": "Sous-titres activés/désactivés",
+    "it": "Sottotitoli on/off",
+    "sv": "Textning på/av",
+    "no": "Teksting på/av",
+    "es": "Subtítulos activados/desactivados",
+    "da": "Undertekster til/fra",
+    "pl": "Napisy włącz/wyłącz"
   },
   "getable": false,
   "setable": true,

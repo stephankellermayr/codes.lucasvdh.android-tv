@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Play",
-    "nl": "Play"
+    "nl": "Play",
+    "de": "Abspielen",
+    "fr": "Lire",
+    "it": "Riproduci",
+    "sv": "Spela",
+    "no": "Spill",
+    "es": "Reproducir",
+    "da": "Afspil",
+    "pl": "Odtwórz"
   },
   "getable": false,
   "setable": true,

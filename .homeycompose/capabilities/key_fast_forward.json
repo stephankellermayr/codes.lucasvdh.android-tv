@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Fast forward",
-    "nl": "Doorspoelen"
+    "nl": "Doorspoelen",
+    "de": "Vorspulen",
+    "fr": "Avance rapide",
+    "it": "Avanzamento veloce",
+    "sv": "Snabbspola framåt",
+    "no": "Spol raskt fremover",
+    "es": "Avance rápido",
+    "da": "Spol hurtigt fremad",
+    "pl": "Przewiń do przodu"
   },
   "getable": false,
   "setable": true,

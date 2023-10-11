@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Stop",
-    "nl": "Stop"
+    "nl": "Stop",
+    "de": "Anhalten",
+    "fr": "Arrêter",
+    "it": "Fermare",
+    "sv": "Stoppa",
+    "no": "Stopp",
+    "es": "Detener",
+    "da": "Stop",
+    "pl": "Zatrzymaj"
   },
   "getable": false,
   "setable": true,

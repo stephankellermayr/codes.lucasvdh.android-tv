@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Pause",
-    "nl": "Pauze"
+    "nl": "Pauze",
+    "de": "Pause",
+    "fr": "Pause",
+    "it": "Pausa",
+    "sv": "Paus",
+    "no": "Pause",
+    "es": "Pausa",
+    "da": "Pause",
+    "pl": "Pauza"
   },
   "getable": false,
   "setable": true,

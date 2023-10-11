@@ -2,7 +2,15 @@
   "type": "boolean",
   "title": {
     "en": "Cursor down",
-    "nl": "Wijzer beneden"
+    "nl": "Wijzer beneden",
+    "de": "Cursor nach unten",
+    "fr": "Curseur vers le bas",
+    "it": "Cursore giù",
+    "sv": "Cursor nedåt",
+    "no": "Pil ned",
+    "es": "Cursor abajo",
+    "da": "Cursor ned",
+    "pl": "Kursor w dół"
   },
   "getable": false,
   "setable": true,
