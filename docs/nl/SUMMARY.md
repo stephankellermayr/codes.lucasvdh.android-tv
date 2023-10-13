@@ -10,7 +10,7 @@
 
 ## Voorbeelden <a href="#examples" id="examples"></a>
 
-* [Energie besparen](examples/energie-besparen.md)
+* [Energie besparen](examples/saving-energy.md)
 
 ## Handleidingen
 
