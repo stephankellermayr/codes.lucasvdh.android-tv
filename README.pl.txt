@@ -1,5 +1,5 @@
-Aplikacja Android TV dla Homey to ostateczne narzędzie dla tych, którzy chcą pełnej kontroli nad swoim doświadczeniem telewizyjnym.
+Dzięki aplikacji Android TV możesz sterować dowolnym urządzeniem Android TV, na którym jest zainstalowana "Usługa pilota Android TV" lub na którym możesz ją zainstalować.
 
-Łatwo kontroluj swoją telewizję tak, jakbyś korzystał z aplikacji Google TV na swoim telefonie. Dzięki tej aplikacji możesz wysyłać różne polecenia do swojego telewizora, takie jak włącz/wyłącz, przycisk D-pad góra/dół, odtwarzanie multimediów, następne multimedium, powrót, potwierdzenie, przycisk domowy, a nawet ustawienie wejścia na HDMI 1.
+Należy pamiętać, że nie jest to oficjalna aplikacja i nie jest powiązana z Androidem ani Google. Użytkowanie odbywa się na własne ryzyko.
 
-Aby korzystać z tej aplikacji, musisz podłączyć swoje urządzenie z systemem Android do swojego Homey. Ponieważ wymaga to lokalnego połączenia z twoim telewizorem, potrzebny jest Homey Pro, aby działał prawidłowo. Pamiętaj, że ta aplikacja nie jest oficjalną aplikacją i nie jest powiązana z Androidem ani Google. Korzystaj na własne ryzyko.
+Wyszukaj "Usługa pilota Android TV" od Google w sklepie Google Play i zainstaluj ją na urządzeniu Android, które chcesz sterować, jeśli nie jest jeszcze zainstalowana na tym urządzeniu.

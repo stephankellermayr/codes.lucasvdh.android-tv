@@ -1,5 +1,5 @@
-Android TV-appen for Homey er det ultimate verktøyet for de som ønsker full kontroll over sin TV-opplevelse.
+Med Android TV-appen kan du styre hvilken som helst Android TV-enhet der "Android TV Remote Service" er installert eller der du kan installere den.
 
-Enkelt kontroller TV-en din, akkurat som du ville gjort fra Google TV-appen på telefonen din. Med denne appen kan du sende ulike kommandoer til TV-en din som for eksempel på/av, D-pad opp/ned, media avspilling, neste media, tilbake, bekreft, hjem og til og med sette inngangen til HDMI 1.
+Vær oppmerksom på at dette ikke er en offisiell app og den er ikke tilknyttet Android eller Google. Bruk skjer på eget ansvar.
 
-For å bruke denne appen må du koble Android-enheten din til Homey. Fordi dette krever en lokal tilkobling til TV-en din, trenger den en Homey Pro for å fungere ordentlig. Vær oppmerksom på at denne appen ikke er en offisiell app og ikke er tilknyttet Android eller Google. Bruk på egen risiko.
+Søk etter "Android TV Remote Service" fra Google i Google Play Store og installer den på den Android-enheten du ønsker å styre, hvis den ikke allerede er installert på enheten.

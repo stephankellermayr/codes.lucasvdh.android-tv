@@ -1,5 +1,5 @@
-La aplicación Android TV para Homey es la herramienta definitiva para aquellos que desean tomar el control total de su experiencia en TV.
+Con la aplicación Android TV, puedes controlar cualquier dispositivo Android TV en el que esté instalado el "Servicio de control remoto de Android TV" o en el que puedas instalarlo.
 
-Controle fácilmente su TV, como lo haría desde la aplicación de Google TV en su teléfono. Con esta aplicación, puede enviar varios comandos a su TV, como encender/apagar, D-pad arriba/abajo, reproducción de medios, siguiente medio, atrás, confirmar, inicio e incluso configurar la entrada en HDMI 1.
+Ten en cuenta que esta no es una aplicación oficial y no está afiliada a Android o Google. Su uso es bajo tu propio riesgo.
 
-Para usar esta aplicación, debe conectar su dispositivo Android a su Homey. Como esto requiere una conexión local a su TV, se necesita un Homey Pro para que funcione correctamente. Tenga en cuenta que esta aplicación no es una aplicación oficial y no está afiliada con Android o Google. Úselo bajo su propio riesgo.
+Busca "Servicio de control remoto de Android TV" de Google en la tienda Google Play e instálalo en el dispositivo Android que deseas controlar, si aún no está instalado en el dispositivo.

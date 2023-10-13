@@ -1,8 +1,6 @@
 # Android TV App for Homey
 The Android TV App for Homey is a tool for those who want to automate control of their TV. With this app, you can easily control your TV, just like you would from the Google TV app on your phone.
 
-This app utilizes the `androidtv-remote` npm package to connect to your TV.
-
 ## Features
 The app provides various commands to your TV, such as:
 

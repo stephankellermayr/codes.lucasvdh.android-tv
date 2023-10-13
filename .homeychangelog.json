@@ -130,5 +130,17 @@
     "es": "Añadidas traducciones faltantes de capacidades",
     "da": "Tilføjet manglende oversættelser af evner",
     "pl": "Dodano brakujące tłumaczenia umiejętności"
+  },
+  "0.8.0": {
+    "en": "Improved app store description",
+    "nl": "Verbeterde app store omschrijving",
+    "de": "Verbesserte App-Store-Beschreibung",
+    "fr": "Description améliorée du magasin d'applications",
+    "it": "Migliorata descrizione del negozio di app",
+    "sv": "Förbättrad appbutikbeskrivning",
+    "no": "Forbedret appbutikkbeskrivelse",
+    "es": "Descripción mejorada de la tienda de aplicaciones",
+    "da": "Forbedret appbutik beskrivelse",
+    "pl": "Ulepszony opis sklepu z aplikacjami"
   }
 }
